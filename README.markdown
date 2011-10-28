@@ -8,10 +8,10 @@ would make anyway.
 
 ## The wp-content directory and wp-config.php ##
 
-By default, WordPress Boilerplate moves `wp-config.php` one level
-above the `wordpress` directory, which is perfectly normal and even
-[recommended for added security][1]. The `wp-content` directory has
-been renamed `assets` and is also moved outside the `wordpress`
+By default, Dave's WordPress Boilerplate moves `wp-config.php` one
+level above the `wordpress` directory, which is perfectly normal and
+even [recommended for added security][1]. The `wp-content` directory
+has been renamed `assets` and is also moved outside the `wordpress`
 directory, which, although perhaps unusual, is [supported just
 fine][2].
 
@@ -19,12 +19,21 @@ The advantage of keeping `assets` outside of your `wordpress`
 directory is that you can update WordPress more easily. Just overwrite
 the old `wordpress` directory with the new one. There's less worry
 about overwriting in `wordpress/wp-content` because everything should
-be stored in the `assets` folder. That said, *always back up your
-entire site before upgrading*.
+be stored in the `assets` folder. That said:
+
+1. WordPress will still store file uploads in
+`wordpress/wp-content/uploads` by default. You will need to change
+this settings manually after installation in the Dashboard at Settings
+> Media > "Store uploads in this folder."
+
+2. *Always back up your entire site before upgrading*.
 
 If you prefer to use the default `/wordpress/wp-content` directory,
-simply delete `wp-config.php`, rename `wp-config-default.php` to
-`wp-config`, and edit the file normally.
+then delete `wp-config.php`, copy `wp-config-sample.php` from the
+`wordpress` directory into parent directory, rename it
+`wp-config.php`, and edit the file normally.
+
+
 
 
 
