@@ -3,7 +3,8 @@
 Dave's WordPress Boilerplate is a personal project to take some of the
 repetitiveness out of creating new WP sites. The goal is to include
 some plugins and modifications to a standard WordPress install that I
-would make anyway.
+would make anyway. Please note that this project is *not yet
+production-ready* in any way.
 
 
 ## The wp-content directory and wp-config.php ##
@@ -21,17 +22,25 @@ the old `wordpress` directory with the new one. There's less worry
 about overwriting in `wordpress/wp-content` because everything should
 be stored in the `assets` directory. That said:
 
-1. WordPress will still store file uploads in
-`wordpress/wp-content/uploads` by default. You will need to change
-this settings manually after installation in the Dashboard at Settings
-> Media > "Store uploads in this folder."
-
-2. *Always back up your entire site before upgrading*.
+**Always back up your entire site before upgrading**.
 
 If you prefer to use the default `/wordpress/wp-content` directory,
-then delete `wp-config.php`, copy `wp-config-sample.php` from the
-`wordpress` directory into parent directory, rename it
-`wp-config.php`, and edit the file normally.
+then delete `wp-config.php` and copy `wp-config-sample.php` from the
+`wordpress` directory as you would during a normal installation.
+
+
+## Additional modifications to wp-config.php ##
+
+-   `WP_SITEURL` is predefined to include the `wordpress` directory.
+    Otherwise, WordPress won't know to look in `wordpress` for the
+    installation files when you first navigate to the root directory.
+    Note that defining `WP_SITEURL` also locks the setting in the
+    Dashboard but does not also change the database value. For more
+    information, [see the Codex][5].
+
+    If you remove the `WP_SITEURL` definition before installation, you
+    will get a 404 at your_url.com; just browse to
+    your_url.com/wordpress and the installer should work fine.
 
 
 ## Local development with local-config.php ##
@@ -61,3 +70,4 @@ both of which include other tips for local development.
 [2]: http://codex.wordpress.org/Editing_wp-config.php#Moving_wp-content
 [3]: http://markjaquith.wordpress.com/2011/06/24/wordpress-local-dev-tips/
 [4]: http://wordpress.tv/2011/08/20/mark-jaquith-scaling-servers-and-deploys-oh-my/
+[5]: http://codex.wordpress.org/Editing_wp-config.php#WordPress_address
