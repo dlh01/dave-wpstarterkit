@@ -46,7 +46,7 @@ configuration in `wp-config.php`.
 
 When deploying your site to your production server, then, you
 obviously have to ensure that you exclude `local-config.php`, or else
-it will obviously be used. That means that you need to *ignore*
+it will be used. That means that you need to *ignore*
 `local-config.php` after you download the boilerplate, but before you
 configure the local file.
 
