@@ -66,6 +66,16 @@ For more information about the configuration, read Mark Jaquith's
 both of which include other tips for local development.
 
 
+## Included plugins ##
+
+Currently [WP Maintenance Mode][6] is the only plugin included in this
+boilerplate, because it's the only plugin I consistently use on every
+site I build. There are many definitions of "must-have" plugins out
+there, of course. But other plugins are as easy to add to your
+installation as they are at any other time, and selectivity keeps the
+weight of the boilerplate down. That said, I'm open to suggestions
+about what to add.
+
 
 
 [1]: http://codex.wordpress.org/Hardening_WordPress#Securing_wp-config.php
@@ -73,3 +83,4 @@ both of which include other tips for local development.
 [3]: http://markjaquith.wordpress.com/2011/06/24/wordpress-local-dev-tips/
 [4]: http://wordpress.tv/2011/08/20/mark-jaquith-scaling-servers-and-deploys-oh-my/
 [5]: http://codex.wordpress.org/Editing_wp-config.php#WordPress_address
+[6]: http://wordpress.org/extend/plugins/wp-maintenance-mode/
