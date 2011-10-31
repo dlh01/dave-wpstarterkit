@@ -26,7 +26,9 @@ be stored in the `assets` directory. That said:
 
 If you prefer to use the default `/wordpress/wp-content` directory,
 then delete `wp-config.php` and copy `wp-config-sample.php` from the
-`wordpress` directory as you would during a normal installation.
+`wordpress` directory as you would during a normal installation. You
+will also have to remove the definitions of `WP_CONTENT_DIR` and
+`WP_CONTENT_URL` in `local-config.php`.
 
 
 ## Additional modifications to wp-config.php ##

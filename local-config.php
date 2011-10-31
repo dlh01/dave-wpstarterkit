@@ -16,9 +16,11 @@
 
 // ** Move the wp-content directory ** //
 define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/assets'); // You'll need to add more to this path if your site isn't in root
-define('WP_CONTENT_URL', 'http://[your_url]/assets'); // You definitely need to add the correct URL, and maybe add more to the path
+define('WP_CONTENT_URL', 'http://www.example.com/assets'); // You definitely need to add the correct URL, and maybe add more to the path
+
 // ** Define the address of the WordPress files ** //
-define('WP_SITEURL', 'http://[your_url]/wordpress'); // You definitely need to add the correct URL, and maybe add more to the path
+define('WP_SITEURL', 'http://www.example.com/wordpress'); // You definitely need to add the correct URL, and maybe add more to the path
+
 // ** MySQL settings - You can get this info from your web host ** //
 define('DB_NAME', 'database_name_here');
 define('DB_USER', 'username_here');
