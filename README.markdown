@@ -3,8 +3,8 @@
 Dave's WordPress Boilerplate is a personal project to take some of the
 repetitiveness out of creating new WP sites. The goal is to include
 some plugins and modifications to a standard WordPress install that I
-would make anyway. Please note that this project is *not yet
-production-ready* in any way.
+would make anyway. Please note that this project has not yet been
+extensively tested in production environments.
 
 
 ## The wp-content directory and wp-config.php ##
@@ -20,9 +20,8 @@ The advantage of keeping `assets` outside of your `wordpress`
 directory is that you can update WordPress more easily. Just overwrite
 the old `wordpress` directory with the new one. There's less worry
 about overwriting in `wordpress/wp-content` because everything should
-be stored in the `assets` directory. That said:
-
-**Always back up your entire site before upgrading**.
+be stored in the `assets` directory. That said, **always back up your
+site before upgrading**.
 
 If you prefer to use the default `/wordpress/wp-content` directory,
 then delete `wp-config.php` and copy `wp-config-sample.php` from the
