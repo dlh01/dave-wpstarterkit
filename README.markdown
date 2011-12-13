@@ -1,4 +1,4 @@
-# Dave's WordPress Boilerplate #
+# Dave's WordPress Starter Kit #
 
 Dave's WordPress Boilerplate is a personal project to take some of the
 repetitiveness out of creating new WP sites. The goal is to include
