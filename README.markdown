@@ -32,9 +32,10 @@ the master branch except for moving `wp-content`.
 -   `WP_SITEURL` is predefined to include the `wordpress` directory.
     Otherwise, WordPress won't know to look in `wordpress` for the
     installation files when you first navigate to the root directory.
-    Note that defining `WP_SITEURL` also locks the setting in the
-    Dashboard but does not also change the database value. For more
-    information, [see the Codex][5].
+    `WP_HOME` is predefined so that your site's home page isn't at
+    `/wordpress`.  Note that these definitions lock the associated
+    settings in the Dashboard but do not also change the database
+    values. For more information, [see the Codex][5].
 
     If you remove the `WP_SITEURL` definition before installation,
     you will get a 404 at your_url.com; just browse to
