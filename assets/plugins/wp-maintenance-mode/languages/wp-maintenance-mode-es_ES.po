@@ -1,0 +1,277 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: !wartungsmodus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: TodoWordPress <traducciones@todowp.org>\n"
+"Language-Team: TodoWordPress <traducciones@todowp.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: SPAIN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: .\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: !wartungsmodus.php:119
+msgid "Settings"
+msgstr "Opciones"
+
+#: !wartungsmodus.php:212
+msgid "Save"
+msgstr "Guardar"
+
+#: !wartungsmodus.php:238
+#: !wartungsmodus.php:273
+msgid "Updated"
+msgstr "Actualizar"
+
+#: site.php:83
+msgid "Admin-Login"
+msgstr "Administración"
+
+#: !wartungsmodus.php:382
+msgid "Plugin by:"
+msgstr "Plugin de:"
+
+#: !wartungsmodus.php:384
+#: !wartungsmodus.php:387
+#: !wartungsmodus.php:390
+#: !wartungsmodus.php:393
+#: !wartungsmodus.php:396
+#: !wartungsmodus.php:399
+#: !wartungsmodus.php:402
+#: !wartungsmodus.php:405
+#: !wartungsmodus.php:408
+#: !wartungsmodus.php:411
+msgid "Design by:"
+msgstr "Diseñado por:"
+
+#: !wartungsmodus.php:153
+msgid "Plugin Settings"
+msgstr "Opciones del Plugin"
+
+#: !wartungsmodus.php:140
+#, php-format
+msgid "Plugin %s settings <strong>updated</strong>."
+msgstr "Las opciones de %s <strong>han sido actualizadas</strong>."
+
+#: site.php:7
+#: site.php:77
+msgid "Maintenance Mode"
+msgstr "En Mantenimiento"
+
+#: !wartungsmodus.php:178
+msgid "Link:"
+msgstr "Enlace:"
+
+#: !wartungsmodus.php:183
+msgid "Theme:"
+msgstr "Tema:"
+
+#: !wartungsmodus.php:186
+msgid "Simple Text"
+msgstr "Texto Simple"
+
+#: !wartungsmodus.php:187
+msgid "The Truck"
+msgstr "The Truck"
+
+#: !wartungsmodus.php:164
+msgid "Value:"
+msgstr "Valor:"
+
+#: !wartungsmodus.php:166
+msgid "Unit:"
+msgstr "Unidad:"
+
+#: !wartungsmodus.php:168
+msgid "second"
+msgstr "segundo"
+
+#: !wartungsmodus.php:169
+msgid "minute"
+msgstr "minuto"
+
+#: !wartungsmodus.php:170
+msgid "hour"
+msgstr "hora"
+
+#: !wartungsmodus.php:171
+msgid "day"
+msgstr "día"
+
+#: !wartungsmodus.php:172
+msgid "week"
+msgstr "semana"
+
+#: !wartungsmodus.php:173
+msgid "month"
+msgstr "mes"
+
+#: !wartungsmodus.php:174
+msgid "year"
+msgstr "año"
+
+#: !wartungsmodus.php:147
+#: !wartungsmodus.php:158
+#: !wartungsmodus.php:180
+msgid "False"
+msgstr "Desactivado"
+
+#: !wartungsmodus.php:148
+#: !wartungsmodus.php:159
+#: !wartungsmodus.php:181
+msgid "True"
+msgstr "Activado"
+
+#: !wartungsmodus.php:327
+#: site.php:39
+#: site.php:44
+msgid "seconds"
+msgstr "segundos"
+
+#: !wartungsmodus.php:331
+#: site.php:39
+#: site.php:44
+msgid "minutes"
+msgstr "minutos"
+
+#: !wartungsmodus.php:335
+#: site.php:39
+#: site.php:44
+msgid "hours"
+msgstr "horas"
+
+#: !wartungsmodus.php:339
+#: site.php:39
+#: site.php:44
+msgid "days"
+msgstr "días"
+
+#: !wartungsmodus.php:343
+msgid "weeks"
+msgstr "semanas"
+
+#: !wartungsmodus.php:347
+msgid "moths"
+msgstr "meses"
+
+#: !wartungsmodus.php:351
+msgid "years"
+msgstr "años"
+
+#: !wartungsmodus.php:141
+#, fuzzy, php-format
+msgid "Plugin %s active status <strong>updated</strong>."
+msgstr "Plugin %s active status <strong>updated</strong>."
+
+#: !wartungsmodus.php:143
+#, fuzzy
+msgid "Plugin Activate"
+msgstr "Plugin Activate"
+
+#: !wartungsmodus.php:185
+msgid "Own Style"
+msgstr "Style propio"
+
+#: !wartungsmodus.php:188
+msgid "The Sun"
+msgstr "The Sun"
+
+#: !wartungsmodus.php:189
+msgid "The FF Error"
+msgstr "The FF Error"
+
+#: !wartungsmodus.php:190
+msgid "Monster"
+msgstr "Monster"
+
+#: !wartungsmodus.php:198
+msgid "Own Style URL (incl. http://):"
+msgstr "URL de tu estilo (incluido el \"http://\"):"
+
+#: !wartungsmodus.php:202
+msgid "Text:"
+msgstr "Texto:"
+
+#: !wartungsmodus.php:311
+msgid "Coution: Maintenance mode is <strong>active</strong>!"
+msgstr "Atención: El modo mantenimiento está <strong>activo</strong>"
+
+#: !wartungsmodus.php:150
+msgid "Update"
+msgstr "Actualizar"
+
+#: !wartungsmodus.php:191
+msgid "Chastely"
+msgstr "Chastely"
+
+#: !wartungsmodus.php:192
+msgid "Only Typo"
+msgstr "Only Typo"
+
+#: !wartungsmodus.php:193
+msgid "Paint"
+msgstr "Paint"
+
+#: !wartungsmodus.php:194
+msgid "Animate (Flash, only german)"
+msgstr "Animate (Flash, sólo en alemán)"
+
+#: !wartungsmodus.php:311
+msgid "Deactivate or change Settings"
+msgstr "Desactivar o cambiar las opciones"
+
+#: !wartungsmodus.php:156
+msgid "Countdown:"
+msgstr "Cuenta atrás:"
+
+#: !wartungsmodus.php:161
+#: !wartungsmodus.php:162
+msgid "Click for datepicker"
+msgstr "Haz click para ver el calendario"
+
+#: !wartungsmodus.php:161
+msgid "Date:"
+msgstr "Fecha:"
+
+#: !wartungsmodus.php:163
+msgid "Activate countdown for using this. Use value and unit or use the countdown and set the date."
+msgstr "Hay que activar la cuenta atrás para usar esto, luego pon la fecha en la que quieres que termine la cuenta atrás."
+
+#: !wartungsmodus.php:195
+msgid "Damask"
+msgstr "Damask"
+
+#: !wartungsmodus.php:196
+msgid "Lego"
+msgstr "Lego"
+
+#: !wartungsmodus.php:206
+msgid "Excludes:"
+msgstr "Excluidas:"
+
+#: !wartungsmodus.php:209
+msgid "Exlude pages, posts or archives from the maintenance mode. Add the Slug of page or post as a comma-separated list.<br />Example: "
+msgstr "Excluye páginas, entradas o archivos del modo de mantenimiento. Agrega la URL de la página o entrada a excluir separándola con una coma \",\" y un espacio.<br />Ejemplo:  "
+
+#: site.php:37
+msgid "The due date was before"
+msgstr "La fecha de finalización era antes de"
+
+#: site.php:39
+#: site.php:44
+msgid "and"
+msgstr "y"
+
+#: !wartungsmodus.php:202
+#, php-format
+msgid "(Use the first %s for the time value or countdown and second %s for the unit of the time, HTML is possible)"
+msgstr "(Utiliza el primer \"%s\" para la cuenta atrás y el segundo \"%s\" para la unidad de tiempo. Se puede usar HTML.)"
+
