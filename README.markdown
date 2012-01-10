@@ -24,7 +24,9 @@ before upgrading**.
 
 If you prefer to use the default `/wordpress/wp-content` directory, then
 try [the `noassets` branch][8], which makes the same modifications as
-the master branch except for moving `wp-content`.
+the master branch except for moving `wp-content`. Note that the
+`noassets` branch is less frequently updated to new versions of
+WordPress (i.e., I forget).
 
 
 ## Additional modifications to wp-config.php ##
