@@ -16,6 +16,7 @@
 
 // ** Use the local-config.php file if it exists ** //
 if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
+    define( 'WP_LOCAL_DEV', true ); // For disable-plugins-when-doing-local-dev.php
     require( dirname( __FILE__ ) . '/local-config.php' );
 } else {
     // ** Move the wp-content directory ** //
