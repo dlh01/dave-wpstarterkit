@@ -1,3 +1,7 @@
+# WP config files
+wp-config.php
+local-config.php
+
 # Numerous always-ignore extensions
 *.diff
 *.err
