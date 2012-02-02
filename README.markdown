@@ -1,10 +1,10 @@
 # Dave's WordPress Starter Kit #
 
 Dave's WordPress Starter Kit is a personal project to take some of the
-repetitiveness out of creating new WP sites. The goal is to include some
-plugins and modifications to a standard WordPress install that I would
-make anyway. Please note that this project has not yet been extensively
-tested in production environments.
+repetitiveness out of creating new WP sites. It includes plugins and
+modifications to a standard WordPress installation that I would make
+anyway. This project has received a few production tests now, and
+has generally worked as intended.
 
 
 ## wp-config.php and the wp-content directory ##
@@ -43,6 +43,11 @@ WordPress (i.e., I forget).
     you will get a 404 at your_url.com; just browse to
     your_url.com/wordpress and the installer should work fine.
 
+-   Note that `wp-config.php` is included in `.gitignore` by default.
+    If you want to include `wp-config.php` in your repository, you
+    need to take the affirmative step of removing it from
+    `.gitignore`.  Requiring this step acts as a safeguard against
+    accidentally pushing the file to a cloud such as GitHub.
 
 ## Local development with local-config.php ##
 
@@ -54,10 +59,9 @@ values are stored and `WP-DEBUG` is turned on. A conditional inside
 it if found. If not, it continues using the production configuration in
 `wp-config.php`.
 
-When deploying your site to your production server, then, you obviously
-have to ensure that you exclude `local-config.php`, or else it will be
-used. That means that you need to *ignore* `local-config.php` after you
-download the kit, but before you configure the local file.
+When deploying your site to your production server, then, you
+obviously have to exclude `local-config.php`, or else it will be used.
+So `local-config.php` is included in `.gitignore`.
 
 For more information about the configuration, read Mark Jaquith's [blog
 post][3] or watch his [presentation at WordCamp SF 2011][4], both of
