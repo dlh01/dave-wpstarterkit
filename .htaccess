@@ -14,3 +14,21 @@ RewriteRule !^wordpress/wp-includes/ - [S=3]
 RewriteRule ^wordpress/wp-includes/[^/]+\.php$ - [F,L]
 RewriteRule ^wordpress/wp-includes/js/tinymce/langs/.+\.php - [F,L]
 RewriteRule ^wordpress/wp-includes/theme-compat/ - [F,L]
+
+#
+# Experimental: Give clients an easier URL for the Dashboard
+#
+# This rule redirects example.com/manage to example.com/wordpress/wp-admin
+# So, you can tell someone to go to example.com/manage to manage their site
+# You can change "manage" to whatever you prefer ("admin", etc.)
+# The rule assumes that the `wordpress/wp-admin` path is in your root
+# Prepend anything you need to the second half of the rule if this assumption is false
+# For example, `^manage/*$ ourblog/wordpress/wp-admin/`
+#
+# Commented for now because it hasn't been extensively tested
+#
+# If it works, then in theory you also could add rules for example.com/newpost and the like
+#
+#RewriteEngine On
+#RewriteBase /
+#RewriteRule ^manage/*$ wordpress/wp-admin/ [L,R,NC]
