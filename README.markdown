@@ -36,27 +36,28 @@ forget).
 
 ## Additional modifications to wp-config.php ##
 
-* `WP_SITEURL` is predefined to include the `wordpress`
-  directory. Otherwise, WordPress won't know to look in
-  `wordpress` for the installation files when you first
-  navigate to the root directory. `WP_HOME` is predefined so
-  that your site's home page isn't at `/wordpress`.
+*   `WP_SITEURL` is predefined to include the `wordpress`
+    directory. Otherwise, WordPress won't know to look in
+    `wordpress` for the installation files when you first
+    navigate to the root directory. `WP_HOME` is predefined
+    so that your site's home page isn't at `/wordpress`.
   
-  If you remove the `WP_SITEURL` definition before
-  installation, you will get a 404 at yourwebsite.com;
-  just browse to yourwebsite.com/wordpress and the
-  installer should work fine.
+    If you remove the `WP_SITEURL` definition before
+    installation, you will get a 404 at yourwebsite.com;
+    just browse to yourwebsite.com/wordpress and the
+    installer should work fine.
 
-  Note that these definitions lock the associated settings
-  in the Dashboard but do not also change the database
-  values. For more information, [see the Codex][5].
+    Note that these definitions lock the associated settings
+    in the Dashboard but do not also change the database
+    values. For more information, [see the Codex][5].
 
-Note that `wp-config.php` is included in `.gitignore` by
+Also, `wp-config.php` is included in `.gitignore` by
 default. If you want to include `wp-config.php` in your
 repository, you need to take the affirmative step of
-removing it from `.gitignore`. Requiring this step acts as a
-safeguard against accidentally pushing the file to a public
-cloud such as GitHub.
+removing it from `.gitignore`.
+
+Requiring this step acts as a safeguard against accidentally
+pushing the file to a public cloud such as GitHub.
 
 ## Local development with local-config.php ##
 
@@ -84,11 +85,11 @@ local development.
 
 ## Some .htaccess defaults ##
 
-* Block surfers from accessing `wp-config.php` and
-  include-only files ([via the Codex][9])
+*   Block surfers from accessing `wp-config.php` and
+    include-only files ([via the Codex][9])
 
-* Experimental: Access the Dashboard through
-  example.com/manage (or "/admin", or whatever you choose)
+*   Experimental: Access the Dashboard through
+    example.com/manage (or "/admin", or whatever you choose)
 
 
 ## Included plugins ##
