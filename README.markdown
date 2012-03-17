@@ -10,13 +10,13 @@ worked as intended.
 
 ## wp-config.php and the wp-content directory ##
 
-By default, Dave's WordPress Starter Kit moves
-`wp-config.php` one level above the `wordpress` directory,
-which is perfectly normal and even [recommended for added
-security][1]. The `wp-content` directory has been renamed
-`assets` and is also moved outside the `wordpress`
-directory, which, although perhaps unusual, is [supported
-just fine][2].
+By default, the kit moves `wp-config.php` one level above
+the `wordpress` directory, which is perfectly normal and
+even [recommended for added security][1].
+
+The `wp-content` directory has been renamed `assets` and is
+also moved outside the `wordpress` directory, which,
+although perhaps unusual, is [supported just fine][2].
 
 The advantage of keeping `assets` outside of your
 `wordpress` directory is that you can update WordPress more
@@ -29,9 +29,10 @@ site before upgrading**.
 If you prefer to use the default `/wordpress/wp-content`
 directory, then try [the `noassets` branch][8], which makes
 the same modifications as the master branch except for
-moving `wp-content`. Note that the `noassets` branch is less
-frequently updated to new versions of WordPress (i.e., I
-forget).
+moving `wp-content`.
+
+Note that the `noassets` branch is less frequently updated
+to new versions of WordPress (i.e., I forget).
 
 
 ## Additional modifications to wp-config.php ##
@@ -39,25 +40,27 @@ forget).
 *   `WP_SITEURL` is predefined to include the `wordpress`
     directory. Otherwise, WordPress won't know to look in
     `wordpress` for the installation files when you first
-    navigate to the root directory. `WP_HOME` is predefined
-    so that your site's home page isn't at `/wordpress`.
-  
+    navigate to the root directory.  
+
     If you remove the `WP_SITEURL` definition before
     installation, you will get a 404 at yourwebsite.com;
     just browse to yourwebsite.com/wordpress and the
     installer should work fine.
 
-    Note that these definitions lock the associated settings
-    in the Dashboard but do not also change the database
-    values. For more information, [see the Codex][5].
+*   `WP_HOME` is predefined so that your site's home page
+    isn't at `/wordpress`.
+
+Note that these definitions lock the associated settings in
+the Dashboard but do not also change the database values.
+For more information, [see the Codex][5].
 
 Also, `wp-config.php` is included in `.gitignore` by
 default. If you want to include `wp-config.php` in your
 repository, you need to take the affirmative step of
 removing it from `.gitignore`.
 
-Requiring this step acts as a safeguard against accidentally
-pushing the file to a public cloud such as GitHub.
+Requiring this step safeguards against accidentally pushing
+the file to a public cloud such as GitHub.
 
 ## Local development with local-config.php ##
 
@@ -103,8 +106,7 @@ VaultPress. His [blog post][3] also discusses the plugin.
 There are many definitions of "must-have" plugins out there,
 of course. But other plugins are as easy to add to your
 installation as they are at any other time, and selectivity
-keeps the weight of the kit down. That said, I'm open to
-suggestions about what to add.
+keeps the weight of the kit down.
 
 
 
