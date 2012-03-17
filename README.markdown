@@ -36,26 +36,27 @@ forget).
 
 ## Additional modifications to wp-config.php ##
 
--   `WP_SITEURL` is predefined to include the `wordpress`
-    directory. Otherwise, WordPress won't know to look in
-    `wordpress` for the installation files when you first
-    navigate to the root directory. `WP_HOME` is predefined
-    so that your site's home page isn't at `/wordpress`.
-    Note that these definitions lock the associated settings
-    in the Dashboard but do not also change the database
-    values. For more information, [see the Codex][5].
+* `WP_SITEURL` is predefined to include the `wordpress`
+  directory. Otherwise, WordPress won't know to look in
+  `wordpress` for the installation files when you first
+  navigate to the root directory. `WP_HOME` is predefined so
+  that your site's home page isn't at `/wordpress`.
+  
+  If you remove the `WP_SITEURL` definition before
+  installation, you will get a 404 at yourwebsite.com;
+  just browse to yourwebsite.com/wordpress and the
+  installer should work fine.
 
-    If you remove the `WP_SITEURL` definition before
-    installation, you will get a 404 at your_url.com; just
-    browse to your_url.com/wordpress and the installer
-    should work fine.
+  Note that these definitions lock the associated settings
+  in the Dashboard but do not also change the database
+  values. For more information, [see the Codex][5].
 
--   Note that `wp-config.php` is included in `.gitignore` by
-    default. If you want to include `wp-config.php` in your
-    repository, you need to take the affirmative step of
-    removing it from `.gitignore`. Requiring this step acts
-    as a safeguard against accidentally pushing the file to
-    a cloud such as GitHub.
+Note that `wp-config.php` is included in `.gitignore` by
+default. If you want to include `wp-config.php` in your
+repository, you need to take the affirmative step of
+removing it from `.gitignore`. Requiring this step acts as a
+safeguard against accidentally pushing the file to a public
+cloud such as GitHub.
 
 ## Local development with local-config.php ##
 
@@ -63,10 +64,12 @@ I use the local development configuration suggested by Mark
 Jaquith. This configuration involves creating a separate
 version of `wp-config.php` called `local-config.php`, in
 which your local database values are stored and `WP-DEBUG`
-is turned on. A conditional inside `wp-config.php` checks
-for the existence of `local-config.php` and uses it if
-found. If not, it continues using the production
-configuration in `wp-config.php`.
+is on.
+
+A conditional inside `wp-config.php` checks for the
+existence of `local-config.php` and uses it if found. If
+not, it continues using the production configuration in
+`wp-config.php`.
 
 When deploying your site to your production server, then,
 you obviously have to exclude `local-config.php`, or else it
@@ -77,6 +80,15 @@ For more information about the configuration, read Mark
 Jaquith's [blog post][3] or watch his [presentation at
 WordCamp SF 2011][4], both of which include other tips for
 local development.
+
+
+## Some .htaccess defaults ##
+
+* Block surfers from accessing `wp-config.php` and
+  include-only files ([via the Codex][9])
+
+* Experimental: Access the Dashboard through
+  example.com/manage (or "/admin", or whatever you choose)
 
 
 ## Included plugins ##
@@ -102,3 +114,4 @@ suggestions about what to add.
 [5]: http://codex.wordpress.org/Editing_wp-config.php#WordPress_address
 [7]: https://gist.github.com/1044546
 [8]: https://github.com/dlh01/dave-wpstarterkit/tree/noassets
+[9]: http://codex.wordpress.org/Hardening_WordPress
