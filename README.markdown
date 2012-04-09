@@ -116,6 +116,12 @@ installation as they are at any other time, and selectivity
 keeps the weight of the kit down.
 
 
+## Miscellaneous ##
+
+* `readme.html` is removed from the `wordpress` directory
+  because it betrays the WordPress version number ([via Net
+  Magazine][10]).
+
 
 [1]: http://codex.wordpress.org/Hardening_WordPress#Securing_wp-config.php
 [2]: http://codex.wordpress.org/Editing_wp-config.php#Moving_wp-content
