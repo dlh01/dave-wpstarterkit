@@ -5,14 +5,6 @@ order allow,deny
 deny from all
 </files>
 
-# Protect .htaccess files
-# http://www.netmagazine.com/tutorials/protect-your-wordpress-site-htaccess
-<Files ~ "^.*\.([Hh][Tt][Aa][Cc])">
-order allow,deny
-deny from all
-satisfy all
-</Files>
-
 # Block browsing access to the include-only files
 # http://codex.wordpress.org/Hardening_WordPress#Securing_wp-includes
 RewriteEngine On
@@ -26,6 +18,14 @@ RewriteRule ^wordpress/wp-includes/theme-compat/ - [F,L]
 # No directory browsing
 # http://www.netmagazine.com/tutorials/protect-your-wordpress-site-htaccess
 Options All -Indexes
+
+# Protect .htaccess files
+# http://www.netmagazine.com/tutorials/protect-your-wordpress-site-htaccess
+<Files ~ "^.*\.([Hh][Tt][Aa][Cc])">
+order allow,deny
+deny from all
+satisfy all
+</Files>
 
 #
 # Experimental: Give clients an easier URL for the Dashboard

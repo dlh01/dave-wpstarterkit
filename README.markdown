@@ -91,8 +91,15 @@ local development.
 *   Block surfers from accessing `wp-config.php` and
     include-only files ([via the Codex][9])
 
+*   No directory browsing ([via Net magazine][10])
+
+*   Prevent viewing the `.htaccess` file itself ([via Net
+    magazine][10])
+
 *   Experimental: Access the Dashboard through
     example.com/manage (or "/admin", or whatever you choose)
+
+*   [The 5G Blacklist 2012 from Perishable Press][11]   
 
 
 ## Included plugins ##
@@ -118,3 +125,5 @@ keeps the weight of the kit down.
 [7]: https://gist.github.com/1044546
 [8]: https://github.com/dlh01/dave-wpstarterkit/tree/noassets
 [9]: http://codex.wordpress.org/Hardening_WordPress
+[10]: http://www.netmagazine.com/tutorials/protect-your-wordpress-site-htaccess
+[11]: http://perishablepress.com/5g-blacklist-2012/
