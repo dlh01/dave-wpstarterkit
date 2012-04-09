@@ -23,8 +23,12 @@ The advantage of keeping `assets` outside of your
 easily. Just overwrite the old `wordpress` directory with
 the new one. There's less worry about overwriting in
 `wordpress/wp-content` because everything should be stored
-in the `assets` directory. That said, **always back up your
-site before upgrading**.
+in the `assets` directory.
+
+That said, **always back up your site before upgrading**.
+Also note that any fresh copy of WordPress includes
+`readme.html`, which is removed from the kit by default (see
+below).
 
 If you prefer to use the default `/wordpress/wp-content`
 directory, then try [the `noassets` branch][8], which makes
