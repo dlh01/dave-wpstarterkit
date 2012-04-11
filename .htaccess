@@ -56,6 +56,8 @@ satisfy all
 
 
 # 5G BLACKLIST/FIREWALL
+# One line below is commented out because it blocks access to the install script
+# Un-comment the line after installation to get it back
 # @ http://perishablepress.com/5g-blacklist/
 
 # 5G:[QUERY STRINGS]
@@ -100,7 +102,7 @@ satisfy all
  RedirectMatch 403 (\=\\\'|\=\\%27|/\\\'/?|\)\.css\()$
  RedirectMatch 403 (\,|//|\)\+|/\,/|\{0\}|\(/\(|\.\.\.|\+\+\+|\||\\\"\\\")
  RedirectMatch 403 \.(cgi|asp|aspx|cfg|dll|exe|jsp|mdb|sql|ini|rar)$
- RedirectMatch 403 /(contac|fpw|install|pingserver|register)\.php$
+ # RedirectMatch 403 /(contac|fpw|install|pingserver|register)\.php$
  RedirectMatch 403 (base64|crossdomain|localhost|wwwroot|e107\_)
  RedirectMatch 403 (eval\(|\_vti\_|\(null\)|echo.*kae|config\.xml)
  RedirectMatch 403 \.well\-known/host\-meta
