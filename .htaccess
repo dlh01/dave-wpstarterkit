@@ -1,3 +1,12 @@
+
+# Put extra .htaccess stuff after what WordPress inserts
+# Including the "BEGIN" and "END" lines means WP won't add them on install
+# http://www.netmagazine.com/tutorials/protect-your-wordpress-site-htaccess
+
+# BEGIN WordPress
+
+# END WordPress
+
 # Block browsing access to wp-config
 # http://codex.wordpress.org/Hardening_WordPress#Securing_wp-config.php
 <files wp-config.php>
