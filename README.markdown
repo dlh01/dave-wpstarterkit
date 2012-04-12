@@ -105,6 +105,9 @@ local development.
 
 *   [The 5G Blacklist 2012 from Perishable Press][11]   
 
+*   Prevent access to PHP files in `/assets` (via
+    `/assets/.htaccess`)
+
 
 ## Included plugins ##
 
@@ -137,3 +140,4 @@ keeps the weight of the kit down.
 [9]: http://codex.wordpress.org/Hardening_WordPress
 [10]: http://www.netmagazine.com/tutorials/protect-your-wordpress-site-htaccess
 [11]: http://perishablepress.com/5g-blacklist-2012/
+
