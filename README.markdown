@@ -7,6 +7,17 @@ installation that I would make anyway. This project has
 received a few production tests now, and has generally
 worked as intended.
 
+## Features ##
+
+* More secure `wp-config.php`
+* Move and rename `wp-content` for easier browsing and
+  easier WordPress upgrades
+* Easier local development with Mark Jaquith's
+  `local-config.php`
+* Install WordPress with no default content
+* `.htaccess` defaults for better security and quick
+  Dashboard access
+
 
 ## wp-config.php and the wp-content directory ##
 
@@ -89,6 +100,15 @@ Jaquith's [blog post][3] or watch his [presentation at
 WordCamp SF 2011][4], both of which include other tips for
 local development.
 
+## Goodbye "Hello world!" ##
+
+The `install.php` file inside the `assets` directory
+contains an empty `wp_install_defaults` function, which
+overrides the standard function in
+`wp-admin/includes/upgrade.php`. Leaving the function empty
+causes WordPress to install without the default "Hello
+world!" post, page, links, categories, etc. (via [the
+wp-hackers mailing list][12] and [WordPress bits][13]).
 
 ## Some .htaccess defaults ##
 
@@ -140,4 +160,6 @@ keeps the weight of the kit down.
 [9]: http://codex.wordpress.org/Hardening_WordPress
 [10]: http://www.netmagazine.com/tutorials/protect-your-wordpress-site-htaccess
 [11]: http://perishablepress.com/5g-blacklist-2012/
+[12]: http://lists.automattic.com/pipermail/wp-hackers/2012-April/042932.html
+[13]: http://wpbits.wordpress.com/2007/08/10/automating-wordpress-customizations-the-installphp-way/
 
