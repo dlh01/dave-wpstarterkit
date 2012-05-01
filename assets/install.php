@@ -3,7 +3,7 @@
  *
  * Install WordPress without "Hello world!" and other default content
  *
- * This function overrides standard wp_install_defaults() in 
+ * This function overrides the standard wp_install_defaults() in 
  * wp-admin/includes/upgrade.php. Leaving the function empty causes WordPress 
  * to install without the default post, page, links, categories, etc.
  *
