@@ -126,4 +126,21 @@ satisfy all
  Allow from all
  # uncomment/edit/repeat next line to block IPs
  # Deny from 123.456.789
+
+ # GetMama
+ # http://blog.sucuri.net/2012/04/getmama-conditional-malware-affecting-thousands-of-sites.html
+ Deny from 78.46.173.14
+ Deny from 176.9.218.191
+ Deny from 91.228.154.254
+ Deny from 77.81.241.253
+ Deny from 184.82.117.110
+ Deny from 46.4.202.93
+ Deny from 46.249.58.135
+ Deny from 176.9.241.150
+ Deny from 46.37.169.56
+ Deny from 46.30.41.99
+ Deny from 94.242.255.35
+ Deny from 178.162.129.223
+ Deny from 78.47.184.33
+ Deny from 31.184.234.96
 </limit>
