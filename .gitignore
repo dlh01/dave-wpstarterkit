@@ -2,6 +2,16 @@
 wp-config.php
 local-config.php
 
+# Some of GitHub's recommented ignores
+assets/uploads/
+assets/upgrade/*
+assets/advanced-cache.php
+assets/wp-cache-config.php
+assets/cache/*
+assets/cache/supercache/*
+sitemap.xml
+sitemap.xml.gz
+
 # Numerous always-ignore extensions
 *.diff
 *.err
