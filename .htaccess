@@ -7,13 +7,6 @@
 
 # END WordPress
 
-# Block browsing access to wp-config
-# http://codex.wordpress.org/Hardening_WordPress#Securing_wp-config.php
-<files wp-config.php>
-order allow,deny
-deny from all
-</files>
-
 # Block browsing access to the include-only files
 # http://codex.wordpress.org/Hardening_WordPress#Securing_wp-includes
 RewriteBase /
