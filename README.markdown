@@ -1,22 +1,25 @@
 # Dave's WordPress Starter Kit #
 
-Dave's WordPress Starter Kit is a personal project to take
-some of the repetitiveness out of creating new WP sites. It
-includes plugins and modifications to a standard WordPress
-installation that I would make anyway. This project has
-received a few production tests now, and has generally
-worked as intended.
+Dave's WordPress Starter Kit takes some repetitiveness out
+of new WordPress projects and provides some sensible
+defaults. It gets you ready for out-of-the-box local
+development, helps secure your installation, and even makes
+your site run a little bit faster.
+
 
 ## Features ##
 
 * More secure `wp-config.php`
+* More secure, higher performance `.htaccess` defaults
+  including the [Roots Theme][14] version of the HTML5
+  Boilerplate `.htaccess` and the [5G Blacklist 2012 from
+  Perishable Press][11]
 * Move and rename `wp-content` for easier browsing and
   easier WordPress upgrades
 * Easier local development with Mark Jaquith's
   `local-config.php`
-* Install WordPress with no default content
-* `.htaccess` defaults for better security and quick
-  Dashboard access
+* Install WordPress with no default content (e.g. "Hello
+  world!")
 
 
 ## wp-config.php and the wp-content directory ##
@@ -55,7 +58,7 @@ to new versions of WordPress (i.e., I forget).
 *   `WP_SITEURL` is predefined to include the `wordpress`
     directory. Otherwise, WordPress won't know to look in
     `wordpress` for the installation files when you first
-    navigate to the root directory.  
+    navigate to the root directory.
 
     If you remove the `WP_SITEURL` definition before
     installation, you will get a 404 at yourwebsite.com;
@@ -112,18 +115,19 @@ wp-hackers mailing list][12] and [WordPress bits][13]).
 
 ## Some .htaccess defaults ##
 
+*   [The Roots Theme version of the HTML5 Boilerplate
+    `.htaccess`][14]
+
+*   [The 5G Blacklist 2012 from Perishable Press][11]
+
 *   Block surfers from accessing `wp-config.php` and
     include-only files ([via the Codex][9])
-
-*   No directory browsing ([via Net magazine][10])
 
 *   Prevent viewing the `.htaccess` file itself ([via Net
     magazine][10])
 
-*   Experimental: Access the Dashboard through
-    example.com/manage (or "/admin", or whatever you choose)
-
-*   [The 5G Blacklist 2012 from Perishable Press][11]   
+*   Access the Dashboard through example.com/manage (or
+    "/admin", or whatever you choose)
 
 *   Prevent access to PHP files in `/assets` (via
     `/assets/.htaccess`)
@@ -143,13 +147,6 @@ installation as they are at any other time, and selectivity
 keeps the weight of the kit down.
 
 
-## Miscellaneous ##
-
-* `readme.html` is removed from the `wordpress` directory
-  because it betrays the WordPress version number ([via Net
-  Magazine][10]).
-
-
 [1]: http://codex.wordpress.org/Hardening_WordPress#Securing_wp-config.php
 [2]: http://codex.wordpress.org/Editing_wp-config.php#Moving_wp-content
 [3]: http://markjaquith.wordpress.com/2011/06/24/wordpress-local-dev-tips/
@@ -162,4 +159,4 @@ keeps the weight of the kit down.
 [11]: http://perishablepress.com/5g-blacklist-2012/
 [12]: http://lists.automattic.com/pipermail/wp-hackers/2012-April/042932.html
 [13]: http://wpbits.wordpress.com/2007/08/10/automating-wordpress-customizations-the-installphp-way/
-
+[14]: https://github.com/retlehs/roots
