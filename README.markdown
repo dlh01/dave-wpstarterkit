@@ -2,9 +2,7 @@
 
 Dave's WordPress Starter Kit takes some repetitiveness out
 of new WordPress projects and provides some sensible
-defaults. It gets you ready for out-of-the-box local
-development, helps secure your installation, and even makes
-your site run a little bit faster.
+defaults.
 
 
 ## Features ##
