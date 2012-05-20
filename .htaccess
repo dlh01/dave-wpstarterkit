@@ -16,10 +16,6 @@ RewriteRule ^wordpress/wp-includes/[^/]+\.php$ - [F,L]
 RewriteRule ^wordpress/wp-includes/js/tinymce/langs/.+\.php - [F,L]
 RewriteRule ^wordpress/wp-includes/theme-compat/ - [F,L]
 
-# No directory browsing
-# http://www.netmagazine.com/tutorials/protect-your-wordpress-site-htaccess
-Options All -Indexes
-
 # Protect .htaccess files
 # http://www.netmagazine.com/tutorials/protect-your-wordpress-site-htaccess
 <Files ~ "^.*\.([Hh][Tt][Aa][Cc])">
