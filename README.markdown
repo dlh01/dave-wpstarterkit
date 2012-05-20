@@ -20,6 +20,7 @@ your site run a little bit faster.
   `local-config.php`
 * Install WordPress with no default content (e.g. "Hello
   world!")
+* A few default `.gitignore`s
 
 
 ## wp-config.php and the wp-content directory ##
@@ -147,6 +148,13 @@ installation as they are at any other time, and selectivity
 keeps the weight of the kit down.
 
 
+## .gitignore ##
+
+The Starter Kit also includes some default listings in
+`.gitignore` from [GitHub's collection of `.gitignore`
+templates][15].
+
+
 [1]: http://codex.wordpress.org/Hardening_WordPress#Securing_wp-config.php
 [2]: http://codex.wordpress.org/Editing_wp-config.php#Moving_wp-content
 [3]: http://markjaquith.wordpress.com/2011/06/24/wordpress-local-dev-tips/
@@ -160,3 +168,4 @@ keeps the weight of the kit down.
 [12]: http://lists.automattic.com/pipermail/wp-hackers/2012-April/042932.html
 [13]: http://wpbits.wordpress.com/2007/08/10/automating-wordpress-customizations-the-installphp-way/
 [14]: https://github.com/retlehs/roots
+[15]: https://github.com/github/gitignore
