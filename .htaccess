@@ -16,7 +16,6 @@ deny from all
 
 # Block browsing access to the include-only files
 # http://codex.wordpress.org/Hardening_WordPress#Securing_wp-includes
-RewriteEngine On
 RewriteBase /
 RewriteRule ^wordpress/wp-admin/includes/ - [F,L]
 RewriteRule !^wordpress/wp-includes/ - [S=3]
@@ -36,12 +35,8 @@ deny from all
 satisfy all
 </Files>
 
-#
 # Give clients an easier URL for the Dashboard at example.com/manage
-#
 # In theory, you also could add rules for example.com/newpost and the like
-#
-RewriteEngine On
 RewriteBase /
 RewriteRule ^manage/*$ wordpress/wp-admin/ [L,R,NC]
 
@@ -53,7 +48,6 @@ RewriteRule ^manage/*$ wordpress/wp-admin/ [L,R,NC]
 
 # 5G:[QUERY STRINGS]
 <ifModule mod_rewrite.c>
- RewriteEngine On
  RewriteBase /
  RewriteCond %{QUERY_STRING} (environ|localhost|mosconfig|scanner) [NC,OR]
  RewriteCond %{QUERY_STRING} (menu|mod|path|tag)\=\.?/? [NC,OR]
