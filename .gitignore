@@ -2,7 +2,7 @@
 wp-config.php
 local-config.php
 
-# Some of GitHub's recommented ignores
+# Some of GitHub's recommended ignores
 assets/uploads/
 assets/upgrade/*
 assets/advanced-cache.php
