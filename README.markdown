@@ -7,18 +7,18 @@ defaults.
 
 ## Features ##
 
-* More secure `wp-config.php`
-* More secure, higher performance `.htaccess` defaults
+* Cleaner `wp-config.php`
+* Security and performance improvements in `.htaccess`,
   including the [Roots Theme][14] version of the HTML5
   Boilerplate `.htaccess` and the [5G Blacklist 2012 from
   Perishable Press][11]
-* Move and rename `wp-content` for easier browsing and
-  easier WordPress upgrades
+* Easier file browsing by moving `/wordpress/wp-content` to
+  `/content`
 * Easier local development with Mark Jaquith's
   `local-config.php`
 * Install WordPress with no default content (e.g. "Hello
   world!")
-* A few default `.gitignore`s
+* A few helpful default `.gitignore`s
 
 
 ## wp-config.php and the wp-content directory ##
@@ -27,16 +27,16 @@ By default, the kit moves `wp-config.php` one level above
 the `wordpress` directory, which is perfectly normal and
 even [recommended for added security][1].
 
-The `wp-content` directory has been renamed `assets` and is
+The `wp-content` directory has been renamed `content` and is
 also moved outside the `wordpress` directory, which,
 although perhaps unusual, is [supported just fine][2].
 
-The advantage of keeping `assets` outside of your
+The advantage of keeping `content` outside of your
 `wordpress` directory is that you can update WordPress more
 easily. Just overwrite the old `wordpress` directory with
 the new one. There's less worry about overwriting in
 `wordpress/wp-content` because everything should be stored
-in the `assets` directory.
+in the `content` directory.
 
 That said, **always back up your site before upgrading**.
 Also note that any fresh copy of WordPress includes
@@ -100,11 +100,13 @@ will be used. So `local-config.php` is included in
 For more information about the configuration, read Mark
 Jaquith's [blog post][3] or watch his [presentation at
 WordCamp SF 2011][4], both of which include other tips for
-local development.
+local development. Or check out his [WordPress
+Skeleton][16], where many of these ideas have already been
+implemented.
 
 ## Goodbye "Hello world!" ##
 
-The `install.php` file inside the `assets` directory
+The `install.php` file inside the `content` directory
 contains an empty `wp_install_defaults` function, which
 overrides the standard function in
 `wp-admin/includes/upgrade.php`. Leaving the function empty
@@ -153,6 +155,14 @@ The Starter Kit also includes some default listings in
 templates][15].
 
 
+## readme.html and license.txt ##
+
+These are removed from the `/wordpress` directory because
+they betray the WordPress version number ([via Net
+Magazine][10]). Just in case, browsing access to them is
+also blocked in `.htaccess`.
+
+
 [1]: http://codex.wordpress.org/Hardening_WordPress#Securing_wp-config.php
 [2]: http://codex.wordpress.org/Editing_wp-config.php#Moving_wp-content
 [3]: http://markjaquith.wordpress.com/2011/06/24/wordpress-local-dev-tips/
@@ -167,3 +177,4 @@ templates][15].
 [13]: http://wpbits.wordpress.com/2007/08/10/automating-wordpress-customizations-the-installphp-way/
 [14]: https://github.com/retlehs/roots
 [15]: https://github.com/github/gitignore
+[16]: https://github.com/markjaquith/WordPress-Skeleton
