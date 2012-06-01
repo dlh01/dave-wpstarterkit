@@ -509,6 +509,7 @@ AddCharset utf-8 .css .js .xml .json .rss .atom
 
 
 # Block access to WordPress files that reveal version information.
+# readme.html and license.txt is deleted in the Starter Kit by default, but this is a nice backup
 <FilesMatch "^(wp-config\.php|readme\.html|license\.txt)">
   Order allow,deny
   Deny from all
