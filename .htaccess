@@ -584,15 +584,15 @@ AddCharset utf-8 .css .js .xml .json .rss .atom
 
 
 # 5G BLACKLIST/FIREWALL
-# One line below is commented out because it blocks access to the install script
-# Un-comment the line after installation to get it back
+# Some lines that appear to conflict with various WordPress things are commented
 # @ http://perishablepress.com/5g-blacklist/
 
 # 5G:[QUERY STRINGS]
 <ifModule mod_rewrite.c>
  RewriteBase /
  RewriteCond %{QUERY_STRING} (environ|localhost|mosconfig|scanner) [NC,OR]
- RewriteCond %{QUERY_STRING} (menu|mod|path|tag)\=\.?/? [NC,OR]
+ # The 'menu' in this line blocks access to the menu manager
+ # RewriteCond %{QUERY_STRING} (menu|mod|path|tag)\=\.?/? [NC,OR]
  RewriteCond %{QUERY_STRING} boot\.ini  [NC,OR]
  RewriteCond %{QUERY_STRING} echo.*kae  [NC,OR]
  RewriteCond %{QUERY_STRING} etc/passwd [NC,OR]
@@ -629,6 +629,7 @@ AddCharset utf-8 .css .js .xml .json .rss .atom
  RedirectMatch 403 (\=\\\'|\=\\%27|/\\\'/?|\)\.css\()$
  RedirectMatch 403 (\,|//|\)\+|/\,/|\{0\}|\(/\(|\.\.\.|\+\+\+|\||\\\"\\\")
  RedirectMatch 403 \.(cgi|asp|aspx|cfg|dll|exe|jsp|mdb|sql|ini|rar)$
+ # The 'install' in this line blocks access to the WordPress install script
  # RedirectMatch 403 /(contac|fpw|install|pingserver|register)\.php$
  RedirectMatch 403 (base64|crossdomain|localhost|wwwroot|e107\_)
  RedirectMatch 403 (eval\(|\_vti\_|\(null\)|echo.*kae|config\.xml)
