@@ -3,12 +3,12 @@ wp-config.php
 local-config.php
 
 # Some of GitHub's recommended ignores
-assets/uploads/
-assets/upgrade/*
-assets/advanced-cache.php
-assets/wp-cache-config.php
-assets/cache/*
-assets/cache/supercache/*
+content/uploads/
+content/upgrade/*
+content/advanced-cache.php
+content/wp-cache-config.php
+content/cache/*
+content/cache/supercache/*
 sitemap.xml
 sitemap.xml.gz
 
