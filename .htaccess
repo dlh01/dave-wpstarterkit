@@ -9,6 +9,7 @@
 
 # Block browsing access to the include-only files
 # http://codex.wordpress.org/Hardening_WordPress#Securing_wp-includes
+RewriteEngine On
 RewriteBase /
 RewriteRule ^wordpress/wp-admin/includes/ - [F,L]
 RewriteRule !^wordpress/wp-includes/ - [S=3]
