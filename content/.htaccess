@@ -1,4 +1,4 @@
-# Prevent access to PHP files in /assets
+# Prevent access to PHP files in /content
 # http://www.netmagazine.com/tutorials/protect-your-wordpress-site-htaccess
 
 Order deny,allow

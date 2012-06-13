@@ -136,8 +136,8 @@ wp-hackers mailing list][12] and [WordPress bits][13]).
 *   Access the Dashboard through example.com/manage (or
     "/admin", or whatever you choose)
 
-*   Prevent access to PHP files in `/assets` (via
-    `/assets/.htaccess`)
+*   Prevent access to PHP files in `/content` (via
+    `/content/.htaccess`)
 
 
 ## Included plugins ##
