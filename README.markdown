@@ -73,6 +73,9 @@ to new versions of WordPress (i.e., I forget).
     you don't, your database will be more secure than with
     the default.
 
+*   `DISALLOW_FILE_EDIT` is defined `true` to prevent users
+    from editing theme or plugin files from the Dashboard 
+
 Note that these definitions lock the associated settings in
 the Dashboard but do not also change the database values.
 For more information, [see the Codex][5].

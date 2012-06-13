@@ -83,6 +83,11 @@ define('WPLANG', '');
 ini_set( 'display_errors', 0 );
 define( 'WP_DEBUG_DISPLAY', false );
 
+/**
+ * Prevent users from editing theme or plugin files from the Dashboard
+ */
+define('DISALLOW_FILE_EDIT',true);
+
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
