@@ -67,6 +67,12 @@ to new versions of WordPress (i.e., I forget).
 *   `WP_HOME` is predefined so that your site's home page
     isn't at `/wordpress`.
 
+*   The default database prefix is changed from `wp` to a
+    random string. You probably want to change this to
+    something more sensible for your project, but in case
+    you don't, your database will be more secure than with
+    the default.
+
 Note that these definitions lock the associated settings in
 the Dashboard but do not also change the database values.
 For more information, [see the Codex][5].

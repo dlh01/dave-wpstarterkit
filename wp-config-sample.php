@@ -56,8 +56,13 @@ define('NONCE_SALT',       'put your unique phrase here');
 
 /**
  * WordPress Database Table prefix.
+ *
+ * You probably want to change this to something sensible for your project,
+ * but in case you don't, the table prefix is changed from 'wp_' to something
+ * more random and secure (actually, it's a recent commit number from the
+ * dave-wpstarterkit repository).
  */
-$table_prefix  = 'wp_';
+$table_prefix  = 'bfbab39_';
 
 
 /**
