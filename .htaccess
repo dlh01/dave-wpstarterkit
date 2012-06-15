@@ -25,11 +25,6 @@ deny from all
 satisfy all
 </Files>
 
-# Give clients an easier URL for the Dashboard at example.com/manage
-# In theory, you also could add rules for example.com/newpost and the like
-RewriteBase /
-RewriteRule ^manage/*$ wordpress/wp-admin/ [L,R,NC]
-
 # Roots Theme version of the HTML5 Boilerplate .htaccess
 # @ https://github.com/retlehs/roots
 #

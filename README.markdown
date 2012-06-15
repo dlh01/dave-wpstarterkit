@@ -136,9 +136,6 @@ wp-hackers mailing list][12] and [WordPress bits][13]).
 *   Prevent viewing the `.htaccess` file itself ([via Net
     magazine][10])
 
-*   Access the Dashboard through example.com/manage (or
-    "/admin", or whatever you choose)
-
 *   Prevent access to PHP files in `/content` (via
     `/content/.htaccess`)
 
