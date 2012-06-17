@@ -15,5 +15,3 @@
  */
 
 function wp_install_defaults() { }
-
-?>
