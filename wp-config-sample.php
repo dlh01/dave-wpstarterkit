@@ -33,7 +33,10 @@ define('DB_COLLATE', '');
  * Move the wp-content directory
  *
  * You might need to add more to these paths if your site isn't in root. These 
- * paths also assume the same directory structure in local and production installs
+ * paths also assume the same directory structure in local and production installs.
+ * If, say, your local install is in a subdirectory and your production install is 
+ * in root, you can move these definitions to the above conditional and to
+ * local-config.php to configure them for each environment
  */
 define('WP_CONTENT_DIR', dirname( __FILE__ ) . '/content');
 define('WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/content');
