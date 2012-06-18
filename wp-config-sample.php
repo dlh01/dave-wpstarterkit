@@ -79,7 +79,6 @@ define('WPLANG', '');
  */
 // define('WP_DEBUG', false);
 
-
 /**
  * Hide errors
  */
@@ -90,6 +89,9 @@ define( 'WP_DEBUG_DISPLAY', false );
  * Prevent users from editing theme or plugin files from the Dashboard
  */
 define('DISALLOW_FILE_EDIT',true);
+
+/* Optionally specify a maximum number of post revisions saved */
+// define( 'WP_POST_REVISIONS', 5 );
 
 
 /** Absolute path to the WordPress directory. */
