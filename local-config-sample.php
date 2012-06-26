@@ -1,9 +1,7 @@
 <?php
- */
-
 
 /* ============================================================================= 
-   Load local development settings
+   Set local development configuration
    ========================================================================== */
 
 /* Database settings */
@@ -17,10 +15,10 @@ define( 'SAVEQUERIES', true );
 define( 'WP_DEBUG', true );
 
 /*
- * Define the address of the local development website and the core WordPress files
+ * Define the address of the production website and the core WordPress files. 
  *
- * WP_HOME is the URL of the website
- * WP_SITEURL is the URL of the /wordpress directory
+ * WP_HOME is the URL of your website, and WP_SITEURL is the URL
+ * of the /wordpress directory
  */
-define('WP_HOME', 'http://example.local');
-define('WP_SITEURL', 'http://example.local/wordpress');
+define('WP_HOME', 'http://local.example');
+define('WP_SITEURL', 'http://local.example/wordpress');

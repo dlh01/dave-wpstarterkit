@@ -1,8 +1,7 @@
 <?php
 
-
 /* ============================================================================= 
-   Load database info, and use local-config.php if it exists
+   Set database info, but use local-config.php if it exists
    ========================================================================== */
 
 if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
@@ -19,12 +18,11 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
   define('DB_HOST', 'localhost');
 
   /*
-   * Define the address of the production website and the core WordPress files
+   * Define the address of the production website and the core WordPress files. 
    *
-   * WP_HOME is the URL of the website
-   * WP_SITEURL is the URL of the /wordpress directory
+   * WP_HOME is the URL of your website, and WP_SITEURL is the URL
+   * of the /wordpress directory
    */
-
   define('WP_HOME', 'http://www.example.com');
   define('WP_SITEURL', 'http://www.example.com/wordpress');
 }
@@ -34,20 +32,22 @@ define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
     
 
+
 /* ============================================================================= 
    Move the wp-content directory
    ========================================================================== */
 
 /*
  * You might need to add more to these paths. Defining WP_CONTENT_DIR and 
- * WP_CONTENT_URL here, and not in the above conditional, also assume the same 
- * directory structure in local and production installs. If your local install 
- * is in a subdirectory and your production install is in root, you can move 
- * these definitions up and to local-config.php to configure them for each 
- * environment
+ * WP_CONTENT_URL here, and not in the above conditional, also assumes the same 
+ * directory structure in local and production installs. For example, if your 
+ * local install is in a subdirectory and your production install is in root, 
+ * you can move these definitions up, and to local-config.php, to configure them 
+ * for each environment
  */
 define('WP_CONTENT_DIR', dirname( __FILE__ ) . '/content');
 define('WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/content');
+
 
 
 /* ============================================================================= 
@@ -65,17 +65,17 @@ define('LOGGED_IN_SALT',   'put your unique phrase here');
 define('NONCE_SALT',       'put your unique phrase here');
 
 
+
 /* =============================================================================
   WordPress Database Table prefix
   =========================================================================== */
 
 /*
  * You probably want to change this to something sensible for your project,
- * but in case you don't, the table prefix is changed from 'wp_' to something
- * more random and secure (actually, it's a recent commit number from the
- * dave-wpstarterkit repository).
+ * but in case you don't, here's a random, more secure default
  */
 $table_prefix  = 'bfbab39_';
+
 
 
 /* ============================================================================= 
@@ -83,13 +83,14 @@ $table_prefix  = 'bfbab39_';
    ========================================================================== */
 
 /* WordPress Localized Language, defaults to English if blank */
-define('WPLANG', '');
+define( 'WPLANG', '' );
 
 /* Prevent users from editing theme or plugin files from the Dashboard */
-define('DISALLOW_FILE_EDIT',true);
+define( 'DISALLOW_FILE_EDIT', true );
 
 /* Optionally specify a maximum number of post revisions saved */
-// define( 'WP_POST_REVISIONS', 5 );
+/* define( 'WP_POST_REVISIONS', 5 ); */
+
 
 /* Debugging
    ========================================================================== */
@@ -101,11 +102,12 @@ define('DISALLOW_FILE_EDIT',true);
  *
  */
 if ( !defined('WP_DEBUG') )
-  define('WP_DEBUG', false);
+  define( 'WP_DEBUG', false );
 
 /* Hide errors */
 ini_set( 'display_errors', 0 );
 define( 'WP_DEBUG_DISPLAY', false );
+
 
 
 /* ============================================================================= 
