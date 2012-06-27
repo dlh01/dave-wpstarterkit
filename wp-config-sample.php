@@ -99,7 +99,6 @@ define( 'DISALLOW_FILE_EDIT', true );
  * Ensure WP_DEBUG is off unless we have explicitly said otherwise
  *
  * Via ocwp.org/jonbrown/2012/01/30/working-local-on-wordpress-even-better/
- *
  */
 if ( !defined('WP_DEBUG') )
   define( 'WP_DEBUG', false );
