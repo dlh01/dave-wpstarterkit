@@ -76,8 +76,9 @@ to new versions of WordPress (i.e., I forget).
 *   `DISALLOW_FILE_EDIT` is defined `true` to prevent users
     from editing theme or plugin files from the Dashboard 
 
-*   Formatted using ["principles of writing consistent, idiomatic CSS"][17]
-    by @necolas, so it looks pretty.
+*   Formatted using [Nicholas Gallagher's principles of
+    writing consistent, idiomatic CSS][17], so it looks
+    pretty.
 
 Note that these definitions lock the associated settings in
 the Dashboard but do not also change the database values.
@@ -187,3 +188,4 @@ also blocked in `.htaccess`.
 [14]: https://github.com/retlehs/roots
 [15]: https://github.com/github/gitignore
 [16]: https://github.com/markjaquith/WordPress-Skeleton
+[17]: https://github.com/necolas/idiomatic-css 
