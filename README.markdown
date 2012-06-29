@@ -143,6 +143,9 @@ wp-hackers mailing list][12] and [WordPress bits][13]).
 *   Prevent access to PHP files in `/content` (via
     `/content/.htaccess`)
 
+*   Optionally limit access to the Dashboard by IP address
+    (via `/wordpress/wp-admin/.htaccess`)
+
 
 ## Included plugins ##
 

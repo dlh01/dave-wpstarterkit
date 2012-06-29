@@ -1,0 +1,13 @@
+# Optionally limit access to the Dashboard by IP
+#
+# "The following snippet denies access to the admin folder for everyone, with
+# the exception of your IP address, but please note if you have a dynamic IP,
+# you might have to regularly alter this file otherwise you will be denied
+# access yourself!"
+#
+# via http://www.netmagazine.com/tutorials/protect-your-wordpress-site-htaccess
+
+# order deny, allow
+# deny from all
+# allow from 123.456.78.9
+# allow from 987.654.32.1
