@@ -91,6 +91,15 @@ define( 'DISALLOW_FILE_EDIT', true );
 /* Optionally specify a maximum number of post revisions saved */
 /* define( 'WP_POST_REVISIONS', 5 ); */
 
+/* Optionally define the number of days between emptying Trash. Default is 30 */
+/* define( 'EMPTY_TRASH_DAYS', 30 ); */
+
+/* Optionally define the number of seconds between autosaves. Default is 60 */
+/* define( 'AUTOSAVE_INTERVAL', 60 ); */
+
+/* Optionally define the default theme; also the fallback for broken themes */
+/* define( 'WP_DEFAULT_THEME', 'twentyeleven' ); */
+
 
 /* Debugging
    ========================================================================== */
@@ -106,6 +115,8 @@ if ( !defined('WP_DEBUG') )
 /* Hide errors */
 ini_set( 'display_errors', 0 );
 define( 'WP_DEBUG_DISPLAY', false );
+
+/* More constants here: wpengineer.com/2382/wordpress-constants-overview */
 
 
 
