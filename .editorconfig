@@ -1,0 +1,14 @@
+; Help define and maintain consistent coding styles
+; See editorconfig.org for more information and examples
+
+; top-most EditorConfig file
+root = true
+
+; Unix-style newlines
+[*]
+end_of_line = LF
+
+; 2-space indentation
+[*]
+indent_style = space
+indent_size = 2

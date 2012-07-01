@@ -19,6 +19,7 @@ defaults.
 * Install WordPress with no default content (e.g. "Hello
   world!")
 * A few helpful default `.gitignore`s
+* [EditorConfig][18] support
 
 
 ## wp-config.php and the wp-content directory ##
@@ -176,6 +177,21 @@ Magazine][10]). Just in case, browsing access to them is
 also blocked in `.htaccess`.
 
 
+## EditorConfig support ##
+
+[EditorConfig][18] "helps developers define and maintain
+consistent coding styles between different editors and
+IDEs":
+
+> The EditorConfig project consists of a file format for
+> defining coding styles and a collection of text editor
+> plugins that enable editors to read the file format and
+> adhere to defined styles.
+
+An `.editorconfig` is included here that suits my needs, but
+of course you can tailor it for your preferences.
+
+
 [1]: http://codex.wordpress.org/Hardening_WordPress#Securing_wp-config.php
 [2]: http://codex.wordpress.org/Editing_wp-config.php#Moving_wp-content
 [3]: http://markjaquith.wordpress.com/2011/06/24/wordpress-local-dev-tips/
@@ -192,3 +208,4 @@ also blocked in `.htaccess`.
 [15]: https://github.com/github/gitignore
 [16]: https://github.com/markjaquith/WordPress-Skeleton
 [17]: https://github.com/necolas/idiomatic-css 
+[18]: http://editorconfig.org/
