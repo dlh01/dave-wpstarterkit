@@ -1,7 +1,7 @@
 # Dave's WordPress Starter Kit #
 
 Dave's WordPress Starter Kit takes some repetitiveness out
-of new WordPress projects and provides some sensible
+of new WordPress projects and provides a few useful
 defaults.
 
 
@@ -73,9 +73,9 @@ below).
     writing consistent, idiomatic CSS][17], so it looks
     pretty.
 
-Note that these definitions lock the associated settings in
-the Dashboard but do not also change the database values.
-For more information, [see the Codex][5].
+Note that `WP_SITEURL` and `WP_HOME` lock the associated
+settings in the Dashboard but do not also change the
+database values. For more information, [see the Codex][5].
 
 Also, `wp-config.php` is included in `.gitignore` by
 default. If you want to include `wp-config.php` in your
@@ -84,6 +84,7 @@ removing it from `.gitignore`.
 
 Requiring this step safeguards against accidentally pushing
 the file to a public cloud such as GitHub.
+
 
 ## Local development with local-config.php ##
 
@@ -110,6 +111,7 @@ local development. Or check out his [WordPress
 Skeleton][16], where many of these ideas have already been
 implemented.
 
+
 ## Goodbye "Hello world!" ##
 
 The `install.php` file inside the `content` directory
@@ -119,6 +121,7 @@ overrides the standard function in
 causes WordPress to install without the default "Hello
 world!" post, page, links, categories, etc. (via [the
 wp-hackers mailing list][12] and [WordPress bits][13]).
+
 
 ## Some .htaccess defaults ##
 
