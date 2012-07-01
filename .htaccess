@@ -648,6 +648,7 @@ AddCharset utf-8 .css .js .xml .json .rss .atom
 <limit GET POST PUT>
  Order Allow,Deny
  Allow from all
+
  # uncomment/edit/repeat next line to block IPs
  # Deny from 123.456.789
 
@@ -667,4 +668,28 @@ AddCharset utf-8 .css .js .xml .json .rss .atom
  Deny from 178.162.129.223
  Deny from 78.47.184.33
  Deny from 31.184.234.96
+
+ # Perishable Press: "Some of the _worst_ offenders I’ve seen this year"
+ # http://perishablepress.com/6g-beta/
+ Deny from 24.213.139.114
+ Deny from 87.144.218.222
+ Deny from 95.5.32.79
+ Deny from 213.251.186.27
+ Deny from 88.191.93.186
+ Deny from 91.121.136.44
+ Deny from 50.56.92.47
+ Deny from 174.143.148.105
+ Deny from 82.170.168.91
+ Deny from 24.213.139.114
+ Deny from 61.147.110.14
+ Deny from 188.134.42.65
+ Deny from 122.164.215.155
+ Deny from 65.49.68.173
+ Deny from 220.155.1.166
+ Deny from 218.38.16.26
+ Deny from 50.56.92.47
+ Deny from 24.213.139.114
+ Deny from 91.200.19.84
+ Deny from 31.44.199.131
+ Deny from 49.50.8.63
 </limit>
