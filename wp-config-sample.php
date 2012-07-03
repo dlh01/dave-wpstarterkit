@@ -72,7 +72,7 @@ define('NONCE_SALT',       'put your unique phrase here');
 
 /*
  * You probably want to change this to something sensible for your project,
- * but in case you don't, here's a random, more secure default
+ * but in case you don't, this is more random and secure than `wp_`
  */
 $table_prefix  = 'bfbab39_';
 
