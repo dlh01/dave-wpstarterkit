@@ -67,11 +67,11 @@ below).
     the default.
 
 *   `DISALLOW_FILE_EDIT` is defined `true` to prevent users
-    from editing theme or plugin files from the Dashboard 
+    from editing theme or plugin files from the Dashboard.
 
-*   Formatted using [Nicholas Gallagher's principles of
-    writing consistent, idiomatic CSS][17], so it looks
-    pretty.
+*   Looks pretty via formatting based on [Nicholas
+    Gallagher's principles of writing consistent, idiomatic
+    CSS][17].
 
 Note that `WP_SITEURL` and `WP_HOME` lock the associated
 settings in the Dashboard but do not also change the
@@ -80,10 +80,9 @@ database values. For more information, [see the Codex][5].
 Also, `wp-config.php` is included in `.gitignore` by
 default. If you want to include `wp-config.php` in your
 repository, you need to take the affirmative step of
-removing it from `.gitignore`.
-
-Requiring this step safeguards against accidentally pushing
-the file to a public cloud such as GitHub.
+removing it from `.gitignore`. Requiring this step
+safeguards against accidentally pushing the file to a public
+cloud such as GitHub.
 
 
 ## Local development with local-config.php ##
@@ -185,6 +184,12 @@ IDEs":
 
 An `.editorconfig` is included here that suits my needs, but
 of course you can tailor it for your preferences.
+
+
+## crossdomain.xml ##
+
+The Starter Kit includes the `crossdomain.xml` file from the
+HTML5 Boilerplate.
 
 
 [1]: http://codex.wordpress.org/Hardening_WordPress#Securing_wp-config.php
