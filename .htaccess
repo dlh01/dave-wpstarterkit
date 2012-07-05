@@ -1,4 +1,5 @@
 
+
 # Put extra .htaccess stuff after what WordPress inserts
 # Including the "BEGIN" and "END" lines means WP won't add them on install
 # http://www.netmagazine.com/tutorials/protect-your-wordpress-site-htaccess
@@ -6,6 +7,7 @@
 # BEGIN WordPress
 
 # END WordPress
+
 
 # Block browsing access to the include-only files
 # http://codex.wordpress.org/Hardening_WordPress#Securing_wp-includes
@@ -17,6 +19,7 @@ RewriteRule ^wordpress/wp-includes/[^/]+\.php$ - [F,L]
 RewriteRule ^wordpress/wp-includes/js/tinymce/langs/.+\.php - [F,L]
 RewriteRule ^wordpress/wp-includes/theme-compat/ - [F,L]
 
+
 # Protect .htaccess files
 # http://www.netmagazine.com/tutorials/protect-your-wordpress-site-htaccess
 <Files ~ "^.*\.([Hh][Tt][Aa][Cc])">
@@ -25,22 +28,33 @@ deny from all
 satisfy all
 </Files>
 
+
 # Roots Theme version of the HTML5 Boilerplate .htaccess
-# @ https://github.com/retlehs/roots
-#
-# This contains the HTML5 Boilerplate .htaccess that can be found at:
-#  github.com/h5bp/html5-boilerplate/blob/master/.htaccess
-#
-# Added:
-#  Block access to access to WordPress files that reveal version information.
-#
-# Commented out by default:
-#  Expires headers:      Use WP Super Cache or W3 Total Cache (unless using the H5BP build script)
-#  ETag removal:         Use WP Super Cache or W3 Total Cache (unless using the H5BP build script)
-#  Start rewrite engine: Handled by WordPress
-#  Suppress/force www:   Handled by WordPress
-#  Options -MultiViews:  Causes a server 500 error on most shared hosts
-#  Custom 404 page:      Handled by WordPress
+# https://github.com/retlehs/roots
+
+# BEGIN HTML5 Boilerplate
+
+###
+### This contains the HTML5 Boilerplate .htaccess that can be found at:
+###  github.com/h5bp/html5-boilerplate/blob/master/.htaccess
+###
+### Added:
+###  Block access to access to WordPress files that reveal version information.
+###
+### Commented out by default:
+###  Expires headers:      Use WP Super Cache or W3 Total Cache (unless using the H5BP build script)
+###  ETag removal:         Use WP Super Cache or W3 Total Cache (unless using the H5BP build script)
+###  Start rewrite engine: Handled by WordPress
+###  Suppress/force www:   Handled by WordPress
+###  Options -MultiViews:  Causes a server 500 error on most shared hosts
+###  Custom 404 page:      Handled by WordPress
+###
+### Anytime you update this file the .htaccess file in the root of your
+### WordPress install is automatically updated with the changes whenever
+### the permalinks are flushed or set
+###
+
+
 # ----------------------------------------------------------------------
 # Better website experience for IE users
 # ----------------------------------------------------------------------
@@ -154,6 +168,8 @@ AddType application/octet-stream            safariextz
 AddType application/x-web-app-manifest+json webapp
 AddType text/x-vcard                        vcf
 AddType application/x-shockwave-flash       swf
+
+
 
 # ----------------------------------------------------------------------
 # Allow concatenation from within specific js and css files
@@ -292,6 +308,17 @@ AddType application/x-shockwave-flash       swf
 
 # </IfModule>
 
+# ----------------------------------------------------------------------
+# Prevent mobile network providers from modifying your site
+# ----------------------------------------------------------------------
+
+# The following header prevents modification of your code over 3G on some European providers
+# This is the official 'bypass' suggested by O2 in the UK
+
+# <IfModule mod_headers.c>
+# Header set Cache-Control "no-transform"
+# </IfModule>
+
 
 
 # ----------------------------------------------------------------------
@@ -322,6 +349,20 @@ AddType application/x-shockwave-flash       swf
 # BrowserMatch "Mozilla/4.[0-9]{2}" brokenvary=1
 # BrowserMatch "Opera" !brokenvary
 # SetEnvIf brokenvary 1 force-no-vary
+
+
+
+# ----------------------------------------------------------------------
+# Set Keep-Alive Header
+# ----------------------------------------------------------------------
+
+# Keep-Alive allows the server to send multiple requests through one TCP-connection.
+# Be aware of possible disadvantages of this setting. Turn on if you serve a lot of
+# static content.
+
+# <IfModule mod_headers.c>
+#   Header set Connection Keep-Alive
+# </IfModule>
 
 
 
@@ -485,10 +526,10 @@ AddCharset utf-8 .css .js .xml .json .rss .atom
 </IfModule>
 
 
-# Block access to "hidden" directories whose names begin with a period. This
+# Block access to "hidden" directories or files whose names begin with a period. This
 # includes directories used by version control systems such as Subversion or Git.
 <IfModule mod_rewrite.c>
-  RewriteCond %{SCRIPT_FILENAME} -d
+  RewriteCond %{SCRIPT_FILENAME} -d [OR]
   RewriteCond %{SCRIPT_FILENAME} -f
   RewriteRule "(^|/)\." - [F]
 </IfModule>
