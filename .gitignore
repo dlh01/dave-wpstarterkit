@@ -26,12 +26,12 @@ sitemap.xml.gz
 
 # OS or Editor folders
 .DS_Store
+._*
 Thumbs.db
 .cache
 .project
 .settings
 .tmproj
-*.esproj
 nbproject
 *.sublime-project
 *.sublime-workspace
@@ -44,6 +44,13 @@ dwsync.xml
 *.komodoproject
 .komodotools
 
+# Espresso
+*.esproj
+*.espressostorage
+
+# Rubinius
+*.rbc
+
 # Folders to ignore
 .hg
 .svn
@@ -51,3 +58,5 @@ dwsync.xml
 intermediate
 publish
 .idea
+
+
