@@ -44,6 +44,8 @@ define('DB_COLLATE', '');
  * local install is in a subdirectory and your production install is in root, 
  * you can move these definitions up, and to local-config.php, to configure them 
  * for each environment
+ *
+ * Delete these if you want to use the standard wordpress/wp-content structure
  */
 define('WP_CONTENT_DIR', dirname( __FILE__ ) . '/content');
 define('WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/content');
@@ -52,7 +54,7 @@ define('WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/content');
 
 /* ============================================================================= 
    Authentication unique keys and salts
-   =========================================================================== */
+   ========================================================================== */
 
 /* Generate these at https://api.wordpress.org/secret-key/1.1/salt/ */
 define('AUTH_KEY',         'put your unique phrase here');
@@ -74,7 +76,7 @@ define('NONCE_SALT',       'put your unique phrase here');
  * You probably want to change this to something sensible for your project,
  * but in case you don't, this is more random and secure than `wp_`
  */
-$table_prefix  = 'bfbab39_';
+$table_prefix  = 'f3bcf46_';
 
 
 
