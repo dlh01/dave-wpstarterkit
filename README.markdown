@@ -182,8 +182,9 @@ IDEs":
 > plugins that enable editors to read the file format and
 > adhere to defined styles.
 
-An `.editorconfig` is included here that suits my needs, but
-of course you can tailor it for your preferences.
+[Projects using EditorConfig][19] include jQuery and
+Modernizr. An `.editorconfig` is included here that suits my
+needs, but of course you can tailor it for your preferences.
 
 
 ## crossdomain.xml ##
@@ -209,3 +210,4 @@ HTML5 Boilerplate.
 [16]: https://github.com/markjaquith/WordPress-Skeleton
 [17]: https://github.com/necolas/idiomatic-css 
 [18]: http://editorconfig.org/
+[19]: https://github.com/editorconfig/editorconfig/wiki/Projects-Using-EditorConfig
