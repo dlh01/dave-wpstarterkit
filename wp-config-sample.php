@@ -69,8 +69,8 @@ define('NONCE_SALT',       'put your unique phrase here');
 
 
 /* =============================================================================
-  WordPress Database Table prefix
-  =========================================================================== */
+   WordPress Database Table prefix
+   ========================================================================== */
 
 /*
  * You probably want to change this to something sensible for your project,
