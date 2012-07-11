@@ -7,11 +7,8 @@ defaults.
 
 ## Features ##
 
-* Cleaner `wp-config.php`
-* Security and performance improvements in `.htaccess`,
-  including the [Roots Theme][14] version of the HTML5
-  Boilerplate `.htaccess` and the [5G Blacklist 2012 from
-  Perishable Press][11]
+* Optimizations in `wp-config.php`
+* Security and performance improvements in `.htaccess`
 * Easier file browsing by moving `/wordpress/wp-content` to
   `/content`
 * Easier local development with Mark Jaquith's
