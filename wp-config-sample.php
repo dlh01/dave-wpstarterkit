@@ -42,13 +42,16 @@ define('DB_COLLATE', '');
  * WP_CONTENT_URL here, and not in the above conditional, also assumes the same 
  * directory structure in local and production installs. For example, if your 
  * local install is in a subdirectory and your production install is in root, 
- * you can move these definitions up, and to local-config.php, to configure them 
- * for each environment
+ * then you can move these definitions up, and repeat in local-config.php, to 
+ * configure them for each environment
+ *
+ * Avoid using `$_SERVER` if you can:
+ * http://lists.automattic.com/pipermail/wp-hackers/2012-July/043598.html
  *
  * Delete these if you want to use the standard wordpress/wp-content structure
  */
 define('WP_CONTENT_DIR', dirname( __FILE__ ) . '/content');
-define('WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/content');
+define('WP_CONTENT_URL', 'http://www.example.com/content');
 
 
 
