@@ -22,3 +22,16 @@ define( 'WP_DEBUG', true );
  */
 define('WP_HOME', 'http://local.example');
 define('WP_SITEURL', 'http://local.example/wordpress');
+
+
+/*
+ * Define the directory path and URL of the development wp-content directory
+ *
+ * Avoid using `$_SERVER` if you can:
+ * http://lists.automattic.com/pipermail/wp-hackers/2012-July/043598.html
+ *
+ * Delete these if you want to use the standard wordpress/wp-content structure
+ */
+define('WP_CONTENT_DIR', dirname( __FILE__ ) . '/content');
+define('WP_CONTENT_URL', 'http://local.example/content');
+
