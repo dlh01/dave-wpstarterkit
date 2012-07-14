@@ -15,7 +15,7 @@ define( 'SAVEQUERIES', true );
 define( 'WP_DEBUG', true );
 
 /*
- * Define the address of the production website and the core WordPress files. 
+ * Define the address of the development website and the core WordPress files
  *
  * WP_HOME is the URL of your website, and WP_SITEURL is the URL
  * of the /wordpress directory
