@@ -1,9 +1,6 @@
 # Prevent access to PHP files in /content
-# http://www.netmagazine.com/tutorials/protect-your-wordpress-site-htaccess
+# http://blog.sucuri.net/2012/07/wordpress-and-server-hardening-taking-security-to-another-level.html
 
-Order deny,allow
-Deny from all
-# Access to these file types is allowed
-<Files ~ ".(xml|css|jpe?g|png|gif|js)$">
-Allow from all
+<Files *.php>
+deny from all
 </Files>
