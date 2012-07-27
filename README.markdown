@@ -8,7 +8,7 @@ defaults.
 ## Features ##
 
 * Optimizations in `wp-config.php`
-* Security and performance improvements in `.htaccess`
+* Security and performance improvements in `.htaccess` files
 * Easier file browsing by moving `/wordpress/wp-content` to
   `/content`
 * Easier local development with Mark Jaquith's
@@ -135,8 +135,11 @@ wp-hackers mailing list][12] and [WordPress bits][13]).
 *   Prevent access to PHP files in `/content` (via
     `/content/.htaccess`)
 
-*   Optionally limit access to the Dashboard by IP address
-    (via `/wordpress/wp-admin/.htaccess`)
+*   Optionally limit access to the Dashboard by IP address;
+    also, optionally use an `.htpasswd` to require
+    a second username and password for accessing the
+    Dashboard (in `/wordpress/wp-admin/.htaccess`) (via [Net
+    Magazine][10] and [Sucuri Security][20])
 
 
 ## Included plugins ##
@@ -208,3 +211,4 @@ HTML5 Boilerplate.
 [17]: https://github.com/necolas/idiomatic-css 
 [18]: http://editorconfig.org/
 [19]: https://github.com/editorconfig/editorconfig/wiki/Projects-Using-EditorConfig
+[20]: http://blog.sucuri.net/2012/07/wordpress-and-server-hardening-taking-security-to-another-level.html
