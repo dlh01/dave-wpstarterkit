@@ -98,6 +98,9 @@ define( 'DISALLOW_FILE_EDIT', true );
 /* Optionally define the default theme; also the fallback for broken themes */
 /* define( 'WP_DEFAULT_THEME', 'twentyeleven' ); */
 
+/* Uncomment if you need backwards compatability with older plugins */
+/* define( 'PLUGINDIR', '../wp-content/plugins' ); */
+
 
 /* Debugging
    ========================================================================== */
