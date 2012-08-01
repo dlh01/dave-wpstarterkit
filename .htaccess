@@ -627,6 +627,7 @@ AddCharset utf-8 .css .js .xml .json .rss .atom
 # 5G:[QUERY STRINGS]
 <ifModule mod_rewrite.c>
  RewriteBase /
+ # You'll need to comment or edit this line if you use the VIP Scanner plugin
  RewriteCond %{QUERY_STRING} (environ|localhost|mosconfig|scanner) [NC,OR]
  # The 'menu' in this line blocks access to the menu manager
  # RewriteCond %{QUERY_STRING} (menu|mod|path|tag)\=\.?/? [NC,OR]

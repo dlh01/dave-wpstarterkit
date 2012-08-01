@@ -124,7 +124,9 @@ wp-hackers mailing list][12] and [WordPress bits][13]).
 *   [The Roots Theme version of the HTML5 Boilerplate
     `.htaccess`][14]
 
-*   [The 5G Blacklist 2012 from Perishable Press][11]
+*   [The 5G Blacklist 2012 from Perishable Press][11]. Note
+    some comments throughout the blacklist in response to
+    conflicts or false positives I've seen.
 
 *   Block surfers from accessing `wp-config.php` and
     include-only files ([via the Codex][9])
