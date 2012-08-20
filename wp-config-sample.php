@@ -106,7 +106,7 @@ define( 'DISALLOW_FILE_EDIT', true );
 /* define ( 'FORCE_SSL_ADMIN', true ); */
 
 /* Uncomment if you need backwards compatability with older plugins */
-/* define( 'PLUGINDIR', '../wp-content/plugins' ); */
+/* define( 'PLUGINDIR', '../content/plugins' ); */
 
 
 /* Debugging
