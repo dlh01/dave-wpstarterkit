@@ -14,9 +14,9 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
   /*
    * Production database settings
    *
-   * Add a prefix (or suffix) to your database name for some extra security
+   * Add a suffix (or prefix) to your database name for some extra security
    */
-  define('DB_NAME', '25ecb29_database_name_here');
+  define('DB_NAME', 'database_name_here_25ecb29');
   define('DB_USER', 'username_here');
   define('DB_PASSWORD', 'password_here');
   define('DB_HOST', 'localhost');
