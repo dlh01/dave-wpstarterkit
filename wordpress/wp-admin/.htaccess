@@ -14,8 +14,9 @@
 
 # Optionally require a second username and password to access the Dashboard
 # http://blog.sucuri.net/2012/07/wordpress-and-server-hardening-taking-security-to-another-level.html
+# learn more: http://httpd.apache.org/docs/2.2/howto/auth.html#gettingitworking
 
 # AuthUserFile /var/www/mysite/.htpasswd
-# AuthName “Site private access”
+# AuthName "Restricted area"
 # AuthType Basic
 # require user myuser2
