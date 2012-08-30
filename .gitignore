@@ -3,14 +3,24 @@ wp-config.php
 local-config.php
 
 # Some of GitHub's recommended ignores
+# https://github.com/github/gitignore/blob/master/Wordpress.gitignore
 content/uploads/
 content/upgrade/*
+content/backup-db/*
 content/advanced-cache.php
 content/wp-cache-config.php
 content/cache/*
 content/cache/supercache/*
+content/w3tc/*
 sitemap.xml
 sitemap.xml.gz
+readme.html
+license.txt
+
+
+# Consider adding some or all of the below to your global .gitignore
+# https://help.github.com/articles/ignoring-files
+# https://github.com/h5bp/html5-boilerplate/commit/3ce6e98cde37308ce1207ad09970c54a266d0a9a
 
 # Numerous always-ignore extensions
 *.diff
@@ -26,6 +36,7 @@ sitemap.xml.gz
 
 # OS or Editor folders
 .DS_Store
+.DS_Store?
 ._*
 Thumbs.db
 .cache
@@ -35,6 +46,10 @@ Thumbs.db
 nbproject
 *.sublime-project
 *.sublime-workspace
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
 
 # Dreamweaver added files
 _notes
@@ -59,4 +74,16 @@ intermediate
 publish
 .idea
 
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
 
+# Databases
+*.sql
+*.sqlite
