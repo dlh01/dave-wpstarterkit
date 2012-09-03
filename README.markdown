@@ -189,10 +189,12 @@ Modernizr. An `.editorconfig` is included here that suits my
 needs, but of course you can tailor it for your preferences.
 
 
-## crossdomain.xml ##
+## crossdomain.xml, humans.txt, robots.txt ##
 
-The Starter Kit includes the `crossdomain.xml` file from the
-HTML5 Boilerplate. Read more at [the H5BP docs][21].
+The Starter Kit includes the `crossdomain.xml`, `humans.txt`, and
+`robots.txt` files from the HTML5 Boilerplate. Links for more 
+information are included in each file, as well as in
+[the H5BP docs][21].
 
 
 [1]: http://codex.wordpress.org/Hardening_WordPress#Securing_wp-config.php
@@ -214,4 +216,4 @@ HTML5 Boilerplate. Read more at [the H5BP docs][21].
 [18]: http://editorconfig.org/
 [19]: https://github.com/editorconfig/editorconfig/wiki/Projects-Using-EditorConfig
 [20]: http://blog.sucuri.net/2012/07/wordpress-and-server-hardening-taking-security-to-another-level.html
-[21]: https://github.com/h5bp/html5-boilerplate/blob/master/doc/crossdomain.md
+[21]: https://github.com/h5bp/html5-boilerplate/tree/master/doc
