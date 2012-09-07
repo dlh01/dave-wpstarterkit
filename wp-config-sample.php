@@ -5,11 +5,8 @@
    ========================================================================== */
 
 if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
-  /* WP_LOCAL_DEV is used in disable-plugins-when-doing-local-dev.php */
-  define( 'WP_LOCAL_DEV', true );
   include( dirname( __FILE__ ) . '/local-config.php' );
 } else {
-  define( 'WP_LOCAL_DEV', false );
 
   /*
    * Production database settings

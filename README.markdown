@@ -146,16 +146,7 @@ wp-hackers mailing list][12] and [WordPress bits][13]).
 
 ## Included plugins ##
 
-One plugin is included in the kit: [Disable plugins when
-doing local dev][7], written by Mark Jaquith. It uses the
-`local-config.php` file addressed above to disable plugins
-that shouldn't run on your development server, such as
-VaultPress. His [blog post][3] also discusses the plugin.
-
-There are many definitions of "must-have" plugins out there,
-of course. But other plugins are as easy to add to your
-installation as they are at any other time, and selectivity
-keeps the weight of the kit down.
+Only the default WordPress plugins, Akismet and Hello Dolly.
 
 
 ## .gitignore ##
@@ -202,7 +193,6 @@ information are included in each file, as well as in
 [3]: http://markjaquith.wordpress.com/2011/06/24/wordpress-local-dev-tips/
 [4]: http://wordpress.tv/2011/08/20/mark-jaquith-scaling-servers-and-deploys-oh-my/
 [5]: http://codex.wordpress.org/Editing_wp-config.php#WordPress_address
-[7]: https://gist.github.com/1044546
 [8]: https://github.com/dlh01/dave-wpstarterkit/tree/noassets
 [9]: http://codex.wordpress.org/Hardening_WordPress
 [10]: http://www.netmagazine.com/tutorials/protect-your-wordpress-site-htaccess
