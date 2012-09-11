@@ -22,24 +22,14 @@ defaults.
 ## wp-config.php and the wp-content directory ##
 
 By default, the kit moves `wp-config.php` one level above
-the `wordpress` directory, which is perfectly normal and
-even [recommended for added security][1].
-
-The `wp-content` directory has been renamed `content` and is
-also moved outside the `wordpress` directory, which,
-although perhaps unusual, is [supported just fine][2].
-
-The advantage of keeping `content` outside of your
-`wordpress` directory is that you can update WordPress more
-easily. Just overwrite the old `wordpress` directory with
-the new one. There's less worry about overwriting in
-`wordpress/wp-content` because everything should be stored
-in the `content` directory.
-
-That said, **always back up your site before upgrading**.
-Also note that any fresh copy of WordPress includes
-`readme.html`, which is removed from the kit by default (see
-below).
+the `wordpress` directory. The `wp-content` directory has
+been renamed `content` and is also moved outside the
+`wordpress` directory, which is [supported just fine][2].
+For me, moving the configuration files and custom assets out
+of the application directory helps reinforce the separation
+between the two --- i.e., don't modify core files. It also
+saves a step when browsing to the `content` folder from your
+file manager or the command line.
 
 
 ## Additional modifications to wp-config.php ##
@@ -67,8 +57,7 @@ below).
     from editing theme or plugin files from the Dashboard.
 
 *   Looks pretty via formatting based on [Nicholas
-    Gallagher's principles of writing consistent, idiomatic
-    CSS][17].
+    Gallagher's work][17].
 
 Note that `WP_SITEURL` and `WP_HOME` lock the associated
 settings in the Dashboard but do not also change the
@@ -124,9 +113,11 @@ wp-hackers mailing list][12] and [WordPress bits][13]).
 *   [The Roots Theme version of the HTML5 Boilerplate
     `.htaccess`][14]
 
-*   [The 5G Blacklist 2012 from Perishable Press][11]. Note
-    some comments throughout the blacklist in response to
-    conflicts or false positives I've seen.
+*   [The 5G Blacklist 2012 from Perishable Press][11], plus
+    the [WordPress Add-on for 5G][22]. Note some comments
+    throughout the blacklist in response to conflicts or
+    false positives I've seen personally, but your mileage
+    may vary.
 
 *   Block surfers from accessing `wp-config.php` and
     include-only files ([via the Codex][9])
@@ -207,3 +198,4 @@ information are included in each file, as well as in
 [19]: https://github.com/editorconfig/editorconfig/wiki/Projects-Using-EditorConfig
 [20]: http://blog.sucuri.net/2012/07/wordpress-and-server-hardening-taking-security-to-another-level.html
 [21]: https://github.com/h5bp/html5-boilerplate/tree/master/doc
+[22]: http://perishablepress.com/wordpress-5g-blacklist/

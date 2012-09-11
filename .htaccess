@@ -735,3 +735,13 @@ AddCharset utf-8 .css .js .xml .json .rss .atom
  Deny from 31.44.199.131
  Deny from 49.50.8.63
 </limit>
+
+# 5G:[WordPress]
+<ifModule mod_rewrite.c>
+ RedirectMatch 403 /\$\&
+ RedirectMatch 403 (?i)/\&(t|title)=
+ RedirectMatch 403 (?i)/\.(bash|git|hg|log|svn|swp|tar)
+ RedirectMatch 403 (?i)/(1|contact|i|index1|iprober|phpinfo|phpspy|product|signup|t|test|timthumb|tz|visit|webshell|wp-signup).php
+ RedirectMatch 403 (?i)/(author-panel|class|database|manage|phpMyAdmin|register|submit-articles|system|usage|webmaster)/?$
+ RedirectMatch 403 (?i)/(=|_mm|cgi|cvs|dbscripts|jsp|rnd|shadow|userfiles)
+</ifModule>
