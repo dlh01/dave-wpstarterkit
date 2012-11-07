@@ -6,6 +6,7 @@ local-config.php
 # https://github.com/github/gitignore/blob/master/Wordpress.gitignore
 content/uploads/
 content/upgrade/*
+content/blogs.dir
 content/backup-db/*
 content/advanced-cache.php
 content/wp-cache-config.php
