@@ -1,11 +1,7 @@
 <?php
 
-/* ============================================================================= 
-   Set local development configuration
-   ========================================================================== */
-
 /*
- * Database settings
+ * Local database settings
  *
  * Add a suffix (or prefix) to your database name for some extra security
  */
@@ -19,7 +15,7 @@ define( 'SAVEQUERIES', true );
 define( 'WP_DEBUG', true );
 
 /*
- * Define the address of the development website and the core WordPress files
+ * Define the address of the local website and the core WordPress files
  *
  * WP_HOME is the URL of your website, and WP_SITEURL is the URL
  * of the /wordpress directory
@@ -29,7 +25,7 @@ define('WP_SITEURL', 'http://local.example/wordpress');
 
 
 /*
- * Define the directory path and URL of the development wp-content directory
+ * Define the directory path and URL of the local wp-content directory
  *
  * Avoid using `$_SERVER` if you can:
  * http://lists.automattic.com/pipermail/wp-hackers/2012-July/043598.html
