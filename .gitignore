@@ -17,6 +17,40 @@ sitemap.xml.gz
 readme.html
 license.txt
 
+# WP Engine's "large/disallowed file types" list
+# Consider a CDN for these
+*.hqx
+*.bin
+*.exe
+*.dll
+*.deb
+*.dmg
+*.iso
+*.img
+*.msi
+*.msp
+*.msm
+*.mid
+*.midi
+*.kar
+*.mp3
+*.ogg
+*.m4a
+*.ra
+*.3gpp
+*.3gp
+*.mp4
+*.mpeg
+*.mpg
+*.mov
+*.webm
+*.flv
+*.m4v
+*.mng
+*.asx
+*.asf
+*.wmv
+*.avi
 
 # Consider adding some or all of the below to your global .gitignore
 # https://help.github.com/articles/ignoring-files
