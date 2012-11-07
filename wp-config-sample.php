@@ -1,11 +1,13 @@
 <?php
 
 /* ============================================================================= 
-   Set database info, but use local-config.php if it exists
+   Define our production settings, but check for local or staging settings first
    ========================================================================== */
 
 if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
   include( dirname( __FILE__ ) . '/local-config.php' );
+} elseif ( file_exists( dirname( __FILE__ ) . '/staging-config.php' ) ) {
+  include( dirname( __FILE__ ) . '/staging-config.php' );
 } else {
 
   /*

@@ -1,6 +1,7 @@
 # WP config files
 wp-config.php
 local-config.php
+staging-config.php
 
 # Some of GitHub's recommended ignores
 # https://github.com/github/gitignore/blob/master/Wordpress.gitignore
