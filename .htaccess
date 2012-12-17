@@ -638,9 +638,12 @@ AddCharset utf-8 .css .js .xml .json .rss .atom
  RewriteCond %{QUERY_STRING} \=\\\'$    [NC,OR]
  RewriteCond %{QUERY_STRING} \.\./      [NC,OR]
  RewriteCond %{QUERY_STRING} \?         [NC,OR]
- RewriteCond %{QUERY_STRING} \:         [NC,OR]
- RewriteCond %{QUERY_STRING} \[         [NC,OR]
- RewriteCond %{QUERY_STRING} \]         [NC]
+ # The next three lines are modified or disabled for WordPress 3.5 compatibility
+ # http://perishablepress.com/5g-blacklist-2012/comment-page-9/#comment-90018
+ # http://wordpress.org/support/topic/troubleshooting-wordpress-35-master-list#post-3547424
+ RewriteCond %{QUERY_STRING} \:         [NC]
+ # RewriteCond %{QUERY_STRING} \[         [NC,OR]
+ # RewriteCond %{QUERY_STRING} \]         [NC]
  RewriteRule .* - [F]
 </ifModule>
 
