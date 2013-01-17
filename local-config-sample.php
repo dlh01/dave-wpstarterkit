@@ -10,9 +10,15 @@ define('DB_USER', 'username_here');
 define('DB_PASSWORD', 'password_here');
 define('DB_HOST', 'localhost');
 
-/* Debugging */
+/*
+ * Debugging
+ *
+ * See whether you want SCRIPT_DEBUG enabled at
+ * http://codex.wordpress.org/Debugging_in_WordPress#SCRIPT_DEBUG
+ */
 define( 'SAVEQUERIES', true );
 define( 'WP_DEBUG', true );
+// define( 'SCRIPT_DEBUG', true );
 
 /*
  * Define the address of the local website and the core WordPress files
