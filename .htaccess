@@ -61,4 +61,9 @@ deny from all
 #   https://github.com/retlehs/roots
 # Jeff Starr's 5G Blacklist 2013
 #   http://perishablepress.com/5g-blacklist-2013/
+# Limit Dashboard access by IP
+#   http://www.netmagazine.com/tutorials/protect-your-wordpress-site-htaccess
+# Require a second credential to access the Dashboard
+#   http://blog.sucuri.net/2012/07/wordpress-and-server-hardening-taking-security-to-another-level.html
+#   http://build.codepoet.com/2012/07/10/locking-down-wordpress/
 #
