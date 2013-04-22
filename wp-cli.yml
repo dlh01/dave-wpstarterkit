@@ -1,0 +1,3 @@
+# http://wp-cli.org/config/
+path: wordpress
+require: wp-config.php
