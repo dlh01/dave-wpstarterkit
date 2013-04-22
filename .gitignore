@@ -1,4 +1,5 @@
-# WP config files
+# Core and config files
+wordpress
 wp-config.php
 local-config.php
 staging-config.php
