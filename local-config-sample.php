@@ -5,7 +5,7 @@
  *
  * Add a suffix (or prefix) to your database name for some extra security
  */
-define('DB_NAME', 'database_name_here_b11c02a');
+define('DB_NAME', 'database_name_here');
 define('DB_USER', 'username_here');
 define('DB_PASSWORD', 'password_here');
 define('DB_HOST', 'localhost');

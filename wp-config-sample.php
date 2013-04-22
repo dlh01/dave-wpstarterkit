@@ -1,6 +1,6 @@
 <?php
 
-/* ============================================================================= 
+/* =============================================================================
    Define our production settings, but check for local or staging settings first
    ========================================================================== */
 
@@ -15,13 +15,13 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
    *
    * Add a suffix (or prefix) to your database name for some extra security
    */
-  define('DB_NAME', 'database_name_here_25ecb29');
+  define('DB_NAME', 'database_name_here');
   define('DB_USER', 'username_here');
   define('DB_PASSWORD', 'password_here');
   define('DB_HOST', 'localhost');
 
   /*
-   * Define the address of the production website and the core WordPress files 
+   * Define the address of the production website and the core WordPress files
    *
    * WP_HOME is the URL of your website, and WP_SITEURL is the URL
    * of the /wordpress directory
@@ -44,10 +44,10 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
 /* You probably don't need to change these */
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
-    
 
 
-/* ============================================================================= 
+
+/* =============================================================================
    Authentication unique keys and salts
    ========================================================================== */
 
@@ -67,15 +67,11 @@ define('NONCE_SALT',       'put your unique phrase here');
    WordPress Database Table prefix
    ========================================================================== */
 
-/*
- * You probably want to change this to something sensible for your project,
- * but in case you don't, this is more random and secure than `wp_`
- */
-$table_prefix  = 'f3bcf46_';
+$table_prefix  = 'wp_';
 
 
 
-/* ============================================================================= 
+/* =============================================================================
    Other definitions
    ========================================================================== */
 
@@ -127,7 +123,7 @@ define( 'WP_DEBUG_DISPLAY', false );
 
 
 
-/* ============================================================================= 
+/* =============================================================================
    Send WordPress on its way
    ========================================================================== */
 
