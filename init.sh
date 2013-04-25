@@ -23,7 +23,8 @@ if [[ $result == 'Yes' ]]; then
   /bin/rm README.markdown
   /bin/rm init.sh
   echo "
-/* Finished setting up. Have fun! */"
+/* Finished setting up. Have fun! */
+"
    break;
 else
   echo "Canceled."
