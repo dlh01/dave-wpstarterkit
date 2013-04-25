@@ -16,12 +16,12 @@ select result in Yes No; do
 if [[ $result == 'Yes' ]]; then
   echo ""
   wp core download --path=wordpress
-  mv ./local-config-sample.php ./local-config.php
-  mv ./wp-config-sample.php ./wp-config.php
-  rm -rf ./.git
+  /bin/mv ./local-config-sample.php ./local-config.php
+  /bin/mv ./wp-config-sample.php ./wp-config.php
+  /bin/rm -rf ./.git
   git init
-  rm README.markdown
-  rm init.sh
+  /bin/rm README.markdown
+  /bin/rm init.sh
   echo "
 /* Finished setting up. Have fun! */"
    break;
