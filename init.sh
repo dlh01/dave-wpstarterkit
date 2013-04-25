@@ -38,5 +38,5 @@ then
 fi
 
 echo -e "\n"
-echo '=> Getting keys and salts from wordpress.org'
+echo '=> Getting keys and salts from wordpress.org. Copy these into `wp-config.php`'
 curl http://api.wordpress.org/secret-key/1.1/salt

@@ -18,7 +18,7 @@ define('DB_HOST', 'localhost');
  */
 define( 'SAVEQUERIES', true );
 define( 'WP_DEBUG', true );
-// define( 'SCRIPT_DEBUG', true );
+/* define( 'SCRIPT_DEBUG', true ); */
 
 /*
  * Define the address of the local website and the core WordPress files

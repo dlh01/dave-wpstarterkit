@@ -91,7 +91,7 @@ define( 'DISALLOW_FILE_EDIT', true );
 /* define( 'AUTOSAVE_INTERVAL', 60 ); */
 
 /* Optionally define the default theme; also the fallback for broken themes */
-/* define( 'WP_DEFAULT_THEME', 'twentyeleven' ); */
+/* define( 'WP_DEFAULT_THEME', 'twentytwelve' ); */
 
 /*
  * Optionally force SSL when logging in to the Dashboard or all admin pages
