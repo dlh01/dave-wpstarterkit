@@ -1,42 +1,32 @@
 #!/bin/bash
 
-read -p "
-=> Create new Git repository? (y/N)
-> " -n 1 -r
-if [[ $REPLY =~ ^[Yy]$ ]]
-then
-    echo -e "\n"
-    rm -rf ./.git
-    git init
+echo -n "
+/**
+ * Welcome. This script will:
+ *   - Download core to \`./wordpress\`
+ *   - Move \`*-config-sample.php\` to \`*-config.php\`
+ *   - Remove the Starter Kit Git repository and initialize a new one
+ *   - Remove the Starter Kit README
+ *   - Remove this script
+ */
+
+Do you want to continue? "
+
+select result in Yes No; do
+if [[ $result == 'Yes' ]]; then
+  echo ""
+  wp core download --path=wordpress
+  mv ./local-config-sample.php ./local-config.php
+  mv ./wp-config-sample.php ./wp-config.php
+  rm -rf ./.git
+  git init
+  rm README.markdown
+  rm init.sh
+  echo "
+/* Finished setting up. Have fun! */"
+   break;
+else
+  echo "Canceled."
+  break;
 fi
-
-read -p "
-=> Remove Starter Kit README? (y/N)
-> " -n 1 -r
-if [[ $REPLY =~ ^[Yy]$ ]]
-then
-    echo -e "\n"
-    rm README.markdown
-fi
-
-echo '=> Moving `*-config-sample.php` to `*-config.php`'
-mv ./local-config-sample.php ./local-config.php
-mv ./wp-config-sample.php ./wp-config.php
-echo 'Done'
-
-echo '=> Installing core to `./wordpress`'
-wp core download --path=wordpress
-echo 'Done'
-
-read -p "
-=> Remove this installation script? (y/N)
-> " -n 1 -r
-if [[ $REPLY =~ ^[Yy]$ ]]
-then
-    echo -e "\n"
-    rm init.sh
-fi
-
-echo -e "\n"
-echo '=> Getting keys and salts from wordpress.org. Copy these into `wp-config.php`'
-curl http://api.wordpress.org/secret-key/1.1/salt
+done
