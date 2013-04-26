@@ -16,7 +16,19 @@ defaults.
 * Install WordPress with no default content (e.g. "Hello
   world!")
 * A few helpful default `.gitignore`s
-* [EditorConfig][18] support
+* [wp-cli][23] and [EditorConfig][18] support
+
+
+## Requirements ##
+
+* [wp-cli][23]
+
+
+## Installation ##
+
+* Run `setup.sh` from the command line. It will download
+  WordPress core, set up the `/content` directory, and
+  files, and run a few other initialization tasks.
 
 
 ## wp-config.php and the wp-content directory ##
@@ -110,15 +122,6 @@ wp-hackers mailing list][12] and [WordPress bits][13]).
 
 ## Some .htaccess defaults ##
 
-*   [The Roots Theme version of the HTML5 Boilerplate
-    `.htaccess`][14]
-
-*   [The 5G Blacklist 2012 from Perishable Press][11], plus
-    the [WordPress Add-on for 5G][22]. Note some comments
-    throughout the blacklist in response to conflicts or
-    false positives I've seen personally, but your mileage
-    may vary.
-
 *   Block surfers from accessing `wp-config.php` and
     include-only files ([via the Codex][9])
 
@@ -128,31 +131,18 @@ wp-hackers mailing list][12] and [WordPress bits][13]).
 *   Prevent access to PHP files in `/content` (via
     `/content/.htaccess`)
 
-*   Optionally limit access to the Dashboard by IP address;
-    also, optionally use an `.htpasswd` to require
-    a second username and password for accessing the
-    Dashboard (in `/wordpress/wp-admin/.htaccess`) (via [Net
-    Magazine][10] and [Sucuri Security][20])
-
-
-## Included plugins ##
-
-Only the default WordPress plugins, Akismet and Hello Dolly.
-
 
 ## .gitignore ##
 
-The Starter Kit also includes some default listings in
-`.gitignore` from [GitHub's collection of `.gitignore`
-templates][15].
+The Starter Kit includes some default listings in
+`.gitignore` from [GitHub][15] and [WP Engine][24].
 
 
-## readme.html and license.txt ##
+## wp-cli support ##
 
-These are removed from the `/wordpress` directory because
-they betray the WordPress version number ([via Net
-Magazine][10]). Just in case, browsing access to them is
-also blocked in `.htaccess`.
+The [`wp-cli.yml` configuration file][25] supplies default options
+to the `wp` executable. The `path` config is predefined so `wp`
+knows where to find the core files after installation.
 
 
 ## EditorConfig support ##
@@ -174,7 +164,7 @@ needs, but of course you can tailor it for your preferences.
 ## crossdomain.xml, humans.txt, robots.txt ##
 
 The Starter Kit includes the `crossdomain.xml`, `humans.txt`, and
-`robots.txt` files from the HTML5 Boilerplate. Links for more 
+`robots.txt` files from the HTML5 Boilerplate. Links for more
 information are included in each file, as well as in
 [the H5BP docs][21].
 
@@ -193,9 +183,12 @@ information are included in each file, as well as in
 [14]: https://github.com/retlehs/roots
 [15]: https://github.com/github/gitignore
 [16]: https://github.com/markjaquith/WordPress-Skeleton
-[17]: https://github.com/necolas/idiomatic-css 
+[17]: https://github.com/necolas/idiomatic-css
 [18]: http://editorconfig.org/
 [19]: https://github.com/editorconfig/editorconfig/wiki/Projects-Using-EditorConfig
 [20]: http://blog.sucuri.net/2012/07/wordpress-and-server-hardening-taking-security-to-another-level.html
 [21]: https://github.com/h5bp/html5-boilerplate/tree/master/doc
 [22]: http://perishablepress.com/wordpress-5g-blacklist/
+[23]: http://wp-cli.org
+[24]: http://git.wpengine.com/assets/media/recommended-gitignore-no-wp
+[25]: http://wp-cli.org/config/
