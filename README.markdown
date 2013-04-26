@@ -26,9 +26,8 @@ defaults.
 
 ## Installation ##
 
-* Run `setup.sh` from the command line. It will download
-  WordPress core, set up the `/content` directory, and
-  files, and run a few other initialization tasks.
+* Run `setup.sh`. It will download the latest version of WordPress,
+set up the `/content` directory, and handle a few other tasks.
 
 
 ## wp-config.php and the wp-content directory ##
