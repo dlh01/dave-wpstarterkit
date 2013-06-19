@@ -41,3 +41,10 @@ define('WP_SITEURL', 'http://local.example/wordpress');
 define('WP_CONTENT_DIR', dirname( __FILE__ ) . '/content');
 define('WP_CONTENT_URL', 'http://local.example/content');
 
+/*
+ * Jetpack Development Mode
+ *
+ * http://jetpack.me/2013/03/28/jetpack-dev-mode-release/
+ */
+define( 'JETPACK_DEV_DEBUG', true );
+
